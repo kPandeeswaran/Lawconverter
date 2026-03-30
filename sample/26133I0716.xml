@@ -1,0 +1,2486 @@
+<TCase ID="133 ITR (Trib) 0716" Shtitle="Nayara Energy Ltd. v. Asst. CIT (Mum)" Appendix="N">
+	<CaseId>
+		<Pagenum>
+			<ShCourtName>(Mumbai)</ShCourtName>
+		</Pagenum>
+	</CaseId>
+	<court>
+		<CourtName>Income-tax Appellate Tribunal</CourtName>
+		<Bench Special="n">
+			Mumbai “B” Bench
+		</Bench>
+	</court>
+	<CauseTitleGroup>
+		<CauseTitle>
+			<ApellantGroup>
+				<Apellant Type="Apellant">
+					Nayara Energy Ltd.<Footnote>1</Footnote>
+					<Para>(On behalf of merged entity Vadinar Oil Terminal Ltd.)</Para>
+				</Apellant>
+			</ApellantGroup>
+			<RespondentGroup>
+				<Respondent>Assistant Commissioner of Income-tax</Respondent>
+			</RespondentGroup>
+		</CauseTitle>
+	</CauseTitleGroup>
+	<JudGroup>
+		<TJudge Position1="Accountant Member" Position2="None">
+			Prashant
+			Maharishi
+		</TJudge>
+		<TJudge Position1="Judicial Member" Position2="None">
+			Rahul Chaudhary
+		</TJudge>
+	</JudGroup>
+	<Date Month="September" Date="11" Year="2024"/>
+	<SRGroup>
+		<Sr>
+			<ActAbbr>ITA 1961,</ActAbbr>
+			<SecNum> ss 28(i)</SecNum>
+			<SecNum>36(1)(vii)</SecNum>
+			<SecNum>(2)</SecNum>
+			<SecNum>37(1)</SecNum>
+			<SecNum/>
+		</Sr>
+	</SRGroup>
+	<AssYearGroup>
+		<AssYear>2017-18</AssYear>
+	</AssYearGroup>
+	<HFGroup>
+		<Hf Favourof="Department"/>
+		<Hf Favourof="Assessee"/>
+		<Hf Favourof="Remanded"/>
+	</HFGroup>
+	<CWGroup>
+		<CW>
+			<Bold>A.</Bold>
+		</CW>
+		<CW>Income-tax</CW>
+		<CW>Bad debt</CW>
+		<CW>Business loss</CW>
+		<CW>
+			Loss
+			on assignment of receivables and payables on inter-corporate deposits
+			to sister concern
+		</CW>
+		<CW>
+			Auditors’ qualified opinion regarding
+			loss not given in respect of similar transaction with another group
+			concern wherein no decrease shown in fair market value
+		</CW>
+		<CW>
+			No
+			justification for transfer of assets and liabilities for consideration
+			as meagre as 2 per cent. of net value
+		</CW>
+		<CW>
+			Assessee board’s resolution making
+			no reference to loss on transfer or to valuation of inter-corporate
+			deposits at fair market value or to whom assets transferred or which
+			assets were to be sold to which entity or whether board perused
+			draft agreement before executing it
+		</CW>
+		<CW>
+			Agreement of transfer
+			unsigned
+		</CW>
+		<CW>
+			Non-production of board’s resolution and director‘s
+			report going against assessee in -proving genuineness of transaction
+			and in discharging onus
+		</CW>
+		<CW>
+			No write-off of any irrecoverable
+			amount
+		</CW>
+		<CW>Loss not claimable as bad debt</CW>
+		<CW>
+			Fulfilment
+			of conditions of section <SecRef ID="ITA-1961-36-2">36(2)</SecRef> in
+			reckoning interest income as income in computing profit for earlier years
+			irrelevant
+		</CW>
+		<CW>
+			Assessee’s balance-sheet showing payables and receivables
+			as loans and advances, and loss as exceptional item
+		</CW>
+		<CW>
+			Cash-flow
+			statement showing loss as arising from investment, not operational,
+			activities
+		</CW>
+		<CW>
+			Investment in inter-corporate deposits not constituting
+			assessee’s business
+		</CW>
+		<CW>
+			Offering interest income as business
+			income irrelevant to treat loss as being from investment since assessee
+			treating investment activity as such,<page no="717"></page>not as business activity
+		</CW>
+		<CW>
+			Assessee’s
+			incidental or ancillary object of lending not business activity
+			supporting main object of shipping and transportation
+		</CW>
+		<CW>
+			Loss
+			not on revenue, but on -capital, account
+		</CW>
+		<CW>
+			Not constituting
+			bad debt or business loss to qualify for deduction
+		</CW>
+		<CW>
+			Held,
+			Assessing Officer’s order upheld
+		</CW>
+		<CW>
+			<ActName>Income-tax Act, 1961</ActName>,
+			ss. <SecRef ID="ITA-1961-28-i">28(i)</SecRef>,
+			<SecRef ID="ITA-1961-36-1-vii">36(1)(vii)</SecRef>,
+			<SecRef ID="ITA-1961-36-2">36(2)</SecRef>,
+			<SecRef ID="ITA-1961-115JB">115JB</SecRef>.
+		</CW>
+	</CWGroup>
+
+	<CWGroup>
+		<CW>
+			<Bold>B.</Bold>
+		</CW>
+		<CW>Income-tax</CW>
+		<CW>Business expenditure</CW>
+		<CW>
+			Interest
+			on borrowed capital
+		</CW>
+		<CW>Advances to sister concern</CW>
+		<CW>
+			No
+			evidence of commercial expediency shown
+		</CW>
+		<CW>
+			Assessee using borrowed
+			funds not for business purpose but to advance interest-free to group -concern
+		</CW>
+		<CW>
+			Held, Assessing Officer’s order disallowing interest expenditure
+			upheld
+		</CW>
+		<CW>
+			<ActName>Income-tax Act, 1961</ActName>, ss.
+			<SecRef ID="ITA-1961-36-1-vii">36(1)(vii)</SecRef>,
+			<SecRef ID="ITA-1961-37-1">37(1)</SecRef>.
+		</CW>
+	</CWGroup>
+
+	<CWGroup>
+		<CW>
+			<Bold>C.</Bold>
+		</CW>
+		<CW>Income-tax</CW>
+		<CW>Business expenditure</CW>
+		<CW>
+			Interest
+			on borrowed capital
+		</CW>
+		<CW>Investment made in group concern</CW>
+		<CW>
+			No
+			business -activity in investee company
+		</CW>
+		<CW>
+			Loss incurred in
+			investment with additional finance cost
+		</CW>
+		<CW>
+			Assessee submitting
+			additional -evidence by way of investee’s annual accounts, bank
+			borrowings and note of board of directors
+		</CW>
+		<CW>
+			Matter restored
+			to Assessing Officer with direction to assessee to substantiate
+			interest expenditure
+		</CW>
+		<CW>
+			Assessing Officer to also examine whether
+			assessee had any interest in -making investment in sister concern
+			before deciding allowability of interest expenditure
+		</CW>
+		<CW>
+			<ActName>
+				Income-tax
+				Act, 1961
+			</ActName>, ss. <SecRef ID="ITA-1961-36-1-vii">36(1)(vii)</SecRef>,
+			<SecRef ID="ITA-1961-37-1">37(1)</SecRef>.
+		</CW>
+	</CWGroup>
+
+	<CWGroup>
+		<CW>
+			<Bold>D.</Bold>
+		</CW>
+		<CW>Income-tax</CW>
+		<CW>Deduction of tax at source</CW>
+		<CW>
+			Non-granting
+			of credit
+		</CW>
+		<CW>
+			Matter remanded to Assessing Officer to verify
+			issue on merits before granting credit
+		</CW>
+		<CW>
+			<ActName>
+				Income-tax
+				Act, 1961
+			</ActName>.
+		</CW>
+	</CWGroup>
+
+	<?Fm Condstart FM8_SYSTEM_HIDEELEMENT?>
+	<CSGroup hidden="y">
+		<CS>Income-tax</CS>
+		<CS>Bad debt</CS>
+		<CS>Business loss</CS>
+		<CS>Business expenditure</CS>
+		<CS>Interest on borrowed capital</CS>
+		<CS>Deduction of tax at source</CS>
+	</CSGroup>
+	<?Fm Condend FM8_SYSTEM_HIDEELEMENT?>
+	<HeadNote>
+		<Para>
+			For assessment year <AssYear>2017-18</AssYear>,
+			the case of the assessee-company, engaged in the business of crude
+			oil and petroleum products, was selected for scrutiny by -issue
+			of notice under sections <SecRef ID="ITA-1961-143-2">143(2)</SecRef> and
+			<SecRef ID="ITA-1961-142-1">142(1)</SecRef> of the <ActName>
+				Income-tax
+				Act, 1961
+			</ActName>, following its declaration of loss and computation
+			of book profit under section <SecRef ID="ITA-1961-115JB">115JB</SecRef> at
+			a loss in its return of income. Thereafter, the assessment order
+			was passed under section <SecRef ID="ITA-1961-143-3">143(3)</SecRef> assessing
+			a positive income, the book profit -remaining unchanged. The Commissioner
+			(Appeals) dismissed the assessee’s appeal.
+		</Para>
+		<Para>
+			The assessee challenged the following issues : disallowance
+			of loss on -account of assignment of certain receivables and payables
+			to its group -concern IA pursuant to valuation and reassessment
+			of its ability to collect such amount ; partial disallowance of
+			interest expenses claimed in excess of interest income earned on
+			inter-corporate deposits ; disallowance of interest<page no="718"></page>expenses incurred
+			for the loan taken for investment in EL ; and short-granting of
+			credit for tax deducted at source.
+		</Para>
+		<Para>
+			The assessee had sold receivables and payables of inter-corporate
+			deposits from its parent E group of companies to its sister concern,
+			IA, resulting in loss which it claimed as a deduction. The Assessing
+			Officer held the transaction to be sham and the loss fictitious,
+			not allowable as a bad debt or business loss.
+		</Para>
+		<Para>
+			The assessee had incurred interest expenses and also earned
+			interest -income. No interest had been charged on certain deposits
+			for reasons of -commercial expediency. The Commissioner (Appeals)
+			categorically noted that on the question whether the funds borrowed
+			were used for business -purposes, no details were furnished by the
+			assessee.
+		</Para>
+		<Para>
+			The assessee had made investment in company EL, which it claimed
+			was meant for EL to carry out trading activity. However, no such
+			activity could be carried out because of prevalent market conditions.
+			These shares were brought back from the assessee resulting in a
+			loss to the assessee. Over and above the loss, the assessee had
+			also debited finance cost in its books of account incurred towards
+			this investment. Before the Assessing Officer, no document in relation
+			thereto was produced and the record showed that no business -happened
+			in EL. Therefore, the Assessing Officer held that as nothing was brought
+			on record to prove that the investment was in relation to the assessee’s
+			business, he disallowed the interest expenditure, which the Commissioner (Appeals)
+			confirmed.
+		</Para>
+		<Para>On appeal by the assessee :</Para>
+		<Para>
+			<EmphasisR>Held</EmphasisR>, partly allowing the appeal, (i)
+			that the additional evidence submitted by the assessee with respect
+			to the board note relating to the investment in its subsidiary company,
+			audited financial statements of the subsidiary and board resolution
+			of assignment of receivables and payables, was to be admitted since the
+			main reason for the disallowance was on account of interest expenditure on
+			investment made in the subsidiary. <EmphasisR>(para 11)</EmphasisR>
+		</Para>
+		<Para2>
+			(ii) That although the auditors had given a qualified opinion
+			regarding the loss in the transaction of assignment of receivables
+			and payables to IA, there was no such qualification made by them
+			with respect to transaction of sale of similar assets and liabilities
+			with respect to another sister concern, ESJ, in which case there
+			was no decrease in the fair market value of even a -single rupee.
+			Whereas on the receivables transferred to IA, loss was recorded. Both
+			the cases were of companies falling under the same holding company. Thus,
+			there was no justification for transfer to sister concern IA of
+			assets and liabilities for a meagre consideration representing about
+			2 per cent. of the net<page no="719"></page>asset value thereof. Further, in the resolution
+			passed by the assessee, there was no reference of any loss incurred
+			in the transfer of the asset, or valuation of inter-corporate deposits
+			at fair market value, or to whom these assets were to be sold, or
+			which assets were to be sold to which entity, or whether the draft agreement
+			had been perused by the Board before entering into the transaction. Further,
+			the agreement with IA for transfer of receivables by the assessee
+			was an unsigned document. Therefore, the production of the board
+			resolution did not help the assessee’s case. The assessee also stated
+			that the director’s report, referred in the annual report, was not
+			accessible to it and, therefore, could not be produced. The non-production
+			of such a document went against the assessee in proving the genuineness
+			of transaction, the onus of which lay on the -assessee. There was
+			no reason to deviate from the orders of the lower authorities.
+			<EmphasisR>(paras 44, 45, 47, 50, 52, 53, 54, 55)</EmphasisR>
+		</Para2>
+		<Para2>
+			(iii) That regarding the assessee’s claim that it should
+			be allowed the -deduction of the loss as bad debts written off under
+			section <SecRef ID="ITA-1961-36-1-vii">36(1)(vii)</SecRef>, there was
+			no write-off of any irrecoverable amount. The loss on sale or transfer
+			of certain payables and receivables could not be claimed as bad
+			debt. The assessee’s argument that it had fulfilled the conditions
+			of section <SecRef ID="ITA-1961-36-2">36(2)</SecRef> in reckoning the
+			interest income as income while computing the profit for earlier
+			years, was not relevant. Therefore, the assessee was not entitled
+			to claim the deduction of bad debt written off in its books of account
+			under section <SecRef ID="ITA-1961-36-1-vii">36(1)(vii)</SecRef> since
+			there was no write-off of bad debt. <EmphasisR>(para 57)</EmphasisR>
+		</Para2>
+		<Para2>
+			(iv) That as regards the assessee’s claim to treat the loss
+			as a trading loss, a study of the assessee’s balance-sheet showed
+			the payables and receivables treated as loans and advances and the
+			amount of loss incurred was shown as an exceptional item and in
+			the cash flow statement, it was shown to be from investing, not
+			operating, activities. Therefore, it was apparent that it was not the
+			assessee’s business to make investment in inter-corporate deposits.
+			As a result, the loss was not allowable as a business loss. There
+			was also no force in the assessee’s contention that it had offered
+			the interest income as business income and, therefore, the investment
+			should be considered as a business -activity for the simple reason
+			that the investment was held by the assessee to be an investment
+			activity. While the assessee’s main object was shipping and transportation,
+			its incidental or ancillary activity of lending was not a business
+			activity to support its main object. Thus, the assessee’s loss was
+			not on revenue, but on capital, account, not constituting a business
+			loss to qualify for deduction. There was no infirmity in the Assessing
+			Officer’s order to deny deduction of the loss holding the transaction
+			to be sham and intended to book<page no="720"></page>fictitious loss, rendering it non-deductible
+			as either bad debt or business loss. <EmphasisR>(paras 58, 59, 60)</EmphasisR>
+		</Para2>
+		<Para2>
+			(v) That regarding disallowance of interest expenditure,
+			no evidence of commercial expediency was submitted. The assessee
+			had used borrowed funds, not for business purpose, but for advancing
+			to its sister concern without charging any interest. In view of
+			this, there was no infirmity in the order of the lower authorities
+			disallowing interest expenditure under section
+			<SecRef ID="ITA-1961-36-1-iii">36(1)(iii)</SecRef>. <EmphasisR>
+				(para
+				69)
+			</EmphasisR>
+		</Para2>
+		<Para2>
+			(vi) That the assessee submitted EL’s annual accounts as
+			well as the -borrowings made from bankers for such investment. These
+			were additional evidence along with the note of the board of directors,
+			which were admitted. Therefore, this evidence needed to be examined
+			by the Assessing Officer. As a result, the matter was restored back
+			to the Assessing Officer with direction to the assessee to substantiate
+			the interest expenditure incurred by it on the -investment made
+			in EL as an allowable deduction. The Assessing Officer would also
+			need to determine whether the assessee had any interest in carrying out
+			the transaction by examining the accounts of EL and the sanctioned -letters
+			of the banks before deciding the issue of allowability of the interest -expenditure.
+			<EmphasisR>(para 76)</EmphasisR>
+		</Para2>
+		<Para2>
+			(vii) That the assessee was directed to substantiate its
+			claim of credit for tax deduction at source not granted to it, before
+			the Assessing Officer, who was to decide the issue after verification
+			on its merits. <EmphasisR>(para 77)</EmphasisR>
+		</Para2>
+		<Para>
+			<Italics>Chronological list of cases cited 		on page(s)</Italics>
+		</Para>
+		<Referred>
+			<CRT>
+				<Citation Citation="439 ITR 399" year="2021" Court="Bom" fbsb="0"/> ; <Citothers>2021 SCC OnLine Bom 14059</Citothers>,
+				<Title>
+					CIT (Pr.) v. Mahindra Engineering and Chemical Products Ltd.
+				</Title> 		735a-b
+			</CRT>
+			<CRT>
+				<Citothers>[2015] 63 taxmann.com 283 (Bom)</Citothers>, <Title>
+					CIT v. Pudumjee
+					Pulp and
+					Paper Mills Ltd.
+				</Title> 		734e
+			</CRT>
+			<CRT>
+				<Citation Citation="342 ITR 285" year="2012" Court="Bom" fbsb="0"/> ; <Citothers>2012 SCC OnLine Bom 296</Citothers>,
+				<Title>
+					CIT v.
+					Shreyas S. Morakhia
+				</Title> 		734f
+			</CRT>
+			<CRT>
+				<Citation Citation="288 ITR 1" year="2007" Court="SC" fbsb="0"/> ;
+				<Citothers>(2007) 1 SCC 781</Citothers> ; <Citothers>
+					2006 SCC OnLine
+					SC 1411
+				</Citothers>, <Title>S. A. Builders Ltd. v. CIT (Appeals)</Title> 		725h,
+				752f-g
+			</CRT>
+			<CRT>
+				<Citation Citation="220 ITR 185" year="1996" Court="SC" fbsb="0"/> ;
+				<Citothers>(1996) 9 SCC 25</Citothers> ; <Citothers>
+					1996 SCC OnLine
+					SC 140
+				</Citothers>, <Title>Veecumsees v. CIT</Title> 		749b
+			</CRT>
+			<CRT>
+				<Citation Citation="119 ITR 380" year="1979" Court="Bom" fbsb="0"/> ; <Citothers>1976 SCC OnLine Bom 197</Citothers>,
+				<Title>
+					CIT v.
+					Investa Industrial Corporation Ltd.
+				</Title> 		732g
+			</CRT>
+			<CRT>
+				<Citation Citation="38 ITR 413" year="1960" Court="Mad" fbsb="0"/> ;
+				<Citothers>1959 SCC OnLine Mad 229</Citothers>, <Title>
+					Mir Mohd.
+					Ali v. CIT
+				</Title> 		747a
+			</CRT>
+			<CRT>
+				<Citothers>(I. T. A. No. 777/Mum/2022, dated October 10, 2022)</Citothers>,
+				<Title>
+					Nayara
+					Energy Ltd. v. Asst. CIT
+				</Title> 		748g, 750a
+			</CRT>
+			<page no="721"></page>
+			<CRT>
+				<Citothers>
+					(M. A. No. 332/Mum/2022 in I. T. A. No. 777/Mum/2022,
+					dated February 6, 2023)
+				</Citothers>, <Title>
+					Nayara Energy Ltd. v. Asst.
+					CIT
+				</Title>748h, 750b
+			</CRT>
+		</Referred>
+		<TaxCaseNo>
+			<Ref>I. T. A. No.</Ref>
+			<Caseno>
+				<Number>778</Number>/Mum/
+				<year>2022</year> (assessment year <AssYear>2017-18</AssYear>).
+			</Caseno>
+		</TaxCaseNo>
+		<CounselGroup>
+			<forApellant>
+				<CounselName>Nitesh Joshi</CounselName>,
+				Advocate and <CounselName>Sagar Devani</CounselName>, Chartered
+				Accountant, for the assessee.
+			</forApellant>
+			<forRespondent>
+				<CounselName>S. Srinivasu</CounselName>, Commissioner
+				of Income-tax--Departmental representative, for the Department.
+			</forRespondent>
+		</CounselGroup>
+	</HeadNote>
+	<JudgmentGroup Title="Order">
+		<Para>The order of the Bench was pronounced by</Para>
+		<Para>
+			<TJudge Position1="Accountant Member" Position2="None">
+				Prashant
+				Maharishi
+			</TJudge>.—This appeal is filed by Nayara Energy Ltd. (on
+			behalf of merged entities Vadinar Oil Terminal Ltd. (VOTL) for the
+			assessment year 2017-18 against the appellate order passed by the
+			Commissioner of Income-tax (Appeals)-48, Mumbai (the learned “CIT(A)”)
+			dated February 25, 2022, wherein appeal filed by the assessee against
+			the assessment order passed by the Assistant Commissioner of Income-tax,
+			Circle-14 (3)(1), Mumbai (the “AO”) on December 28, 2019 under section
+			143(3) of the Income-tax Act, 1961 (the “Act”), wherein the total
+			income of the assessee returned at a loss of Rs. 20,39,79,700 and
+			book profit computed at a loss of Rs. 8,82,22,43,600 was assessed
+			at as income of Rs. 1,68,17,76,090 and book profit at loss of Rs. 8,82,22,43,600,
+			was dismissed.
+		</Para>
+		<Para>
+			<Bold>2.</Bold> The assessee aggrieved with the same has raised
+			following grounds of appeal :
+		</Para>
+		<Quote>
+			<Para2>
+				<Italics>
+					Disallowance of loss on account of assignment
+					of certain receivables and payable is pursuant to valuation and
+					reassessment of companies’ ability to collect the amount of Rs.
+					2,51,30,00,000
+				</Italics>
+			</Para2>
+			<Para3>
+				1. On the facts and in the circumstances of the case, the
+				Learned Commissioner of Income-tax (Appeals)-48 and the learned
+				Assessing Officer erred on the facts and in law in disallowing loss
+				of Rs. 2,51,30,00,000 actually incurred during the year up on assignment of
+				identified receivables and payable is comprising inter-corporate deposits,
+				interest thereon, security deposits, other receivables, and payable
+				is from or to Essar group entities based on incorrect facts and surmises.
+				The appellant submits that the net losses incurred on assignment
+				of receivables and payable is based on a detailed evaluation by
+				an independent valuer are deductible under section 36(1)(vii) of
+				the Income-tax Act, 1961 (the “Act”).
+			</Para3>
+			<page no="722"></page>
+			<Para3>
+				2. The learned Commissioner of Income-tax (Appeals) and the learned
+				Assessing Officer erred in rejecting the alternate claim of the deductibility
+				of the loss on assignment under section 28(i) of the Act on the
+				basis that the loss was not incidental to the business but was a future
+				anticipated loss, disregarding the appellant’s regular activity
+				of taking and giving ICD is in line with the object clause of the -memorandum
+				of association (MOA). The learned Commissioner of Income-tax (Appeals)
+				and the learned Assessing Officer further erred in not appreciating
+				that this loss was actually incurred ahead of its holding company
+				being taken over by the third parties and should be allowed as a
+				business loss.
+			</Para3>
+			<Para3>
+				The appellant prays that the adjustment in relation to disallowance
+				of loss on account of company’s ability to amount specified amount
+				of Rs. 251.30 crores by the learned Assessing Officer and upheld
+				by the learned Commissioner of Income-tax (Appeals) be deleted.
+			</Para3>
+			<Para2>
+				<Italics>
+					Partial disallowance of interest expenses claimed
+					in excess of interest income earned on inter-corporate deposits
+					Rs. 1,58,12,00,000.
+				</Italics>
+			</Para2>
+			<Para3>
+				3. The learned Commissioner of Income-tax (Appeals) and the learned
+				Assessing Officer erred on facts and in law impartially -disallowing
+				interest expenses in excess of interest income earned amounting
+				to Rs. 158 of blacks on the basis of irrelevant and erroneous observations
+				and conjectures, without appreciating the fact that the interest
+				expenses, incurred for the purposes, and in the course of business,
+				is allowable under section 36(1)(iii) of the Act and the business
+				expediency of such interest cannot be determined on the basis of
+				quantum incurred. The appellant submits that the entire amount of
+				interest expenses of Rs. 253.30 crores be allowed as claimed, without
+				restricting the amount of interest income of Rs. 95.38 crores and
+				during the year.
+			</Para3>
+			<Para3>
+				4. Without prejudice to the above, the learned Commissioner
+				of Income-tax (Appeals) and the learned Assessing Officer erred
+				in -disallowing the interest expenses on ICD is being a business
+				expenditure under section 37(1) of the Act.
+			</Para3>
+			<Para3>
+				5. The learned Assessing Officer erred in considering the
+				interest income from ICD is under the head “Income from other sources” instead
+				of considering the same under the head “Profits and gains of business
+				and profession” in complete disregard of the fact that the appellant
+				was carrying on a systematic and continuous business activity of
+				taking ICD is an giving ICD is and is assessable under the head<page no="723"></page>“Profits
+				and gains of business or profession”. The appellant submits that
+				the interest income arising from its regular business activity,
+				be assessed as profits and gains from business or profession as
+				was done in the prior assessment years.
+			</Para3>
+			<Para3>
+				The appellant prays that the adjustment made by the learned Assessing
+				Officer and upheld by the learned Commissioner of Income-tax (Appeals)
+				in respect of partial disallowance of interest expenses claimed
+				in excess of interest income on ICD is to be deleted.
+			</Para3>
+			<Para2>
+				<Italics>
+					Disallowance of interest expenses incurred for the
+					loan taken for investment in Ennegaon Ltd., Mauritius, Rs. 1,71,57,00,000
+				</Italics>
+			</Para2>
+			<Para3>
+				6. The learned Commissioner of Income-tax (Appeals) and the learned
+				Assessing Officer erred in on the facts and in law in disallowing
+				interest expenses incurred on financial assistance obtained from
+				banks for making strategic equity investment in foreign -company,
+				completely overlooking the facts and circumstances relating to the
+				investment. The appellant submits that the interest, being squarely
+				covered under the specific provisions of section 36(1)(iia) be held
+				as deductible as claimed.
+			</Para3>
+			<Para3>
+				7. Without prejudice to the above, the learned Commissioner
+				of Income-tax (Appeals) and the learned Assessing Officer erred
+				on facts and in law in not allowing the interest expenses incurred -formation
+				investment for furtherance of business of the appellant under section
+				37(1) of the Act.
+			</Para3>
+			<Para3>
+				The appellant prays that the adjustment made by the learned Assessing
+				Officer and upheld by the learned Commissioner of Income-tax (Appeals)
+				pertaining to the disallowance of interest expenses incurred for
+				the loan taken for investment in Ennegaon Ltd., Mauritius be deleted.
+			</Para3>
+			<Para2>
+				<Italics>Grant of short TDS credit of Rs. 2.29 crores</Italics>
+			</Para2>
+			<Para3>
+				8. The learned Commissioner of Income-tax (Appeals) and the learned
+				Assessing Officer erred on the facts and in law in not/short granting
+				of TDS credit of Rs. 2.29 crores while determining the refund of
+				the appellant for the year.
+			</Para3>
+			<Para3>
+				The appellant prays that the TDS credit should be granted
+				of Rs. 2.29 crores while computing the refund which was not granted
+				by the learned Assessing Officer and upheld by the learned Commissioner
+				of Income-tax (Appeals).
+			</Para3>
+			<page no="724"></page>
+			<Para2>
+				<Italics>
+					Order bad in law in the absence of an opportunity
+					for personal hearing
+				</Italics>
+			</Para2>
+			<Para3>
+				9. The learned Commissioner of Income-tax (Appeals) order
+				in passing the order without providing an opportunity of personal
+				hearing though requested by the appellant.
+			</Para3>
+			<Para3>
+				The appellant prays that the order being passed in violation
+				of principles of natural justice and against the provisions of the Income-tax
+				Act, 1961 is bad in law and should be quashed.
+			</Para3>
+		</Quote>
+		<Para>
+			<Bold>3.</Bold> Fact shows that the assessee is a company
+			engaged in the business of handling crude oil and petroleum products.
+			Its facility consists of an offshore single-point mooring, two jetties
+			for handling liquid petroleum -products, tanks for storage of crude
+			oil and petroleum products and rail and road gantries for dispatch
+			of petroleum products.
+		</Para>
+		<Para>
+			<Bold>4.</Bold> The assessee filed its return of income on
+			February 8, 2018 declaring a total loss of Rs. 203,979,700 and computed
+			the book profit under section 115JB at a loss of Rs. 8,822,243,600.
+			The return of income was picked up for scrutiny by issue of notice
+			under section 143(2) of the act on August 27, 2018 and further notice
+			under section 142(1) of the Act was also issued.
+		</Para>
+		<Para>
+			<Bold>5.</Bold> After scrutiny, the assessment order was passed
+			under section 143(3) of the Act on December 28, 2019, wherein the
+			total income of the assessee was assessed at Rs. 5,605,920,300 and
+			the book profit remained unchanged.
+		</Para>
+		<Para>
+			<Bold>6.</Bold> Against this, the assessee preferred an appeal
+			before the learned Commissioner of Income-tax (Appeals), wherein
+			appellate order was passed on February 25, 2022 dismissing the appeal
+			of the assessee. Therefore, the assessee is in appeal before us.
+			Before us the assessee has filed a rectified form 36 which is taken
+			on record.
+		</Para>
+		<Para>
+			<Bold>7.</Bold> The assessee has also made an application
+			for admission of additional evidence and filed a paper book starting
+			from page Nos. 629-914 (paper book-III) as additional evidence containing
+			eighteen documents. Out of that it was stated that thirteen documents
+			are already part of Departmental records however not submitted during
+			the assessment proceedings for assessment year 2017-18. With respect
+			to documents mentioned at serial No. 14 is a memorandum of association
+			of the company, board note relating to investments in Enneagon Ltd.
+			Mauritius (serial No. 15), audited financial statements of Enneagon
+			Ltd. Mauritius (serial No. 16) and board resolution for assignment
+			of receivables and payable (serial No. 17) are the additional evidence.
+			At serial No. 18 the assessee has submitted the computation of income
+			for the assessment year 2017-18. With respect to serial Nos. 1 to
+			13<page no="725"></page>the contention of the assessee was that about documents are part Departmental
+			records for the respective assessment years and the Assessing Officer
+			has relied on the same in the assessment order for the assessment year
+			2017-18. The same are now being relied upon by the assessee-company
+			to substantiate that interest income on inter-corporate deposits
+			given by the appellant were offered to tax in respective years in
+			return of income as business income and have been assessed also
+			as business income. -Further for documents at serial No. 14 the
+			assessee submitted that one of the objects of the assessee under
+			the head objects incidental or ancillary to the attainment of the
+			more main objects in its memorandum of association which allows
+			the assessee to lend money. The said fact was mentioned by the assessee
+			in its submission however neither the Assessing Officer nor the
+			Commissioner of Income-tax (Appeals) has called for the copy of
+			this document and therefore the assessee wants to rely on the same
+			to -substantiate its submission. With respect to documents at serial
+			Nos. 15 and 16 it referred to the board note relating to investment
+			in Ennagoan Ltd., Mauritius discusses and details on the proposal
+			relating to availing of financing facility of US$ 450 million and
+			use of proceeds for equity infusion into overseas subsidiary and
+			audited financials of the said subsidiary for the year-ended March
+			31, 2017. Both these documents are relied upon by the assessee to
+			demonstrate the business rational and the business activity -carried
+			out by that subsidiary for the year-ended March 31, 2017. With respect
+			to document at serial No. 17 which is a board resolution relating
+			to assignment is to demonstrate that the competent authority of
+			the appellant has taken the decision regarding the said transaction
+			after taking into account the larger scheme of things. It was the
+			claim of the assessee that the above documents are relevant documents
+			which could not have been furnished before the lower authorities
+			and therefore those documents must be admitted deciding the issue.
+		</Para>
+		<Para>
+			<Bold>8.</Bold> The learned authorised representative pressed
+			for its admission whereas the learned Departmental representative
+			opposed its admission.
+		</Para>
+		<Para>
+			<Bold>9.</Bold> The learned authorised representative submitted
+			that submissions were made before the learned Commissioner of Income-tax
+			(Appeals) on February 18, 2021 which is placed at page No. 307—onwards
+			wherein at page No. 316 the assessee has cited the decision of the
+			honourable Supreme Court in the case of <Reference>
+				<CRTo>
+					<Title>
+						S.
+						A. Builders Ltd. v. CIT (Appeals)
+					</Title>
+				</CRTo>
+			</Reference><Footnote>2</Footnote> and -further at page No. 317 the assessee
+			has submitted that the assessee needs time before the learned Commissioner
+			of Income-tax (Appeals) of 10-15 days further to supplement the
+			above submission in view of the statutory<page no="726"></page>time line to file the
+			return of income for the assessment year 2020-21 was approaching
+			on February 15, 2021 and further the appellant has filed -several
+			VSV applications for earlier years which were required for to -frequently
+			visit tax office to clear pending rectification orders and order -giving
+			effects. Under these circumstances considering that due to covid-19 related
+			restrictions, the assessee wanted further time. Therefore, it was submitted
+			that the assessee could not submit the detail. As this was the sufficient
+			cause for not adducing these details before the learned lower authorities,
+			now it should be admitted.
+		</Para>
+		<Para>
+			<Bold>10.</Bold> The learned Departmental representative vehemently
+			objected to the same and submitted that the learned Commissioner
+			of Income-tax (Appeals) has disposed of the appeal of the assessee
+			on February 25, 2022. The assessee is relying on his letter dated
+			February 18, 2021 wherein the assessee is seeking time. He submits
+			that the assessee has made a further submission on November 8, 2021
+			before the learned Commissioner of Income-tax (Appeals), wherein
+			once again the assessee has sought time of 10 days. He further submitted
+			that since November 8, 2021 to February 25, 2022, four months’ time
+			was available with the assessee, but nothing was submitted before
+			the learned Commissioner of Income-tax (Appeals). Therefore, the
+			claim of the assessee is that no time was granted to the assessee
+			by the learned Commissioner of Income-tax (Appeals) for -submission
+			of the additional evidence is devoid of any merit and is an incorrect
+			statement. He submits that these is no reason given for non--submission
+			before the learned Assessing Officer. Hence, he submitted that additional
+			evidence should not be admitted as no sufficient cause is shown by the assessee.
+		</Para>
+		<Para>
+			<Bold>11.</Bold> We have carefully considered the rival contention
+			and find that these documents are relevant for the assessee to demonstrate
+			its case before the Tribunal for effective disposal of the grounds
+			raised. It is undoubtedly clear that on February 18, 2021 the assessee
+			has sought time before the learned Commissioner of Income-tax (Appeals)
+			for furnishing further information. Further another letter dated
+			November 8, 2021 was once again submitted before the learned Commissioner
+			of Income-tax (Appeals), in the last line itself the assessee has
+			also sought 10 days’ time to supplement the above submission. The appellate
+			order was passed on February 25, 2022. Thus, it is evident that the assessee
+			has been given enough opportunities to submit the details. There
+			is no reason stated that why these documents were not submitted
+			before the learned Assessing Officer. However, we find that the additional
+			evidence starting from serial Nos. 1-13 are with respect to the return
+			of income and computation for the earlier years. The only additional<page no="727"></page>evidence
+			that has been submitted by the assessee is with respect to the board note
+			relating to investment in subsidiary company, audited financial statement
+			of the subsidiary company and board resolution of assignment of
+			receivable and payable. We find that the board note relating to
+			investment in subsidiary and its annual accounts are the main reason
+			for which the disallowance has been made on account of interest
+			expenditure on investment made in subsidiary. Therefore, to decide
+			that issue, these -documents are as such required by the authorities.
+			In view of this, we admit the additional evidence furnished.
+		</Para>
+		<Para>
+			<Bold>12.</Bold> The first ground of appeal is with respect
+			to disallowance of loss on account of assignment of certain receivables
+			and payables pursuant to -valuation and reassessment of the company’s
+			ability to collect the amount of Rs. 2,51,30,00,000.
+		</Para>
+		<Para>
+			<Bold>13.</Bold> Issue is that the assessee has sold ICD receivables
+			from Essar group companies of Rs. 955 crores along with the Essar group
+			ICD payable of Rs. 699 crores having net asset value of Rs. 256
+			crores is transferred to a sister concern (fellow subsidiary) at
+			Rs 4.98 crores, resulting in to loss of Rs. 251.30 crores. This
+			loss is claimed as deduction by the assessee.
+		</Para>
+		<Para>
+			<Bold>14.</Bold> The brief facts of the grounds are dealt
+			with by the learned Assessing Officer in paragraph No. 4 of the
+			assessment order and by the learned Commissioner of Income-tax (Appeals)
+			in paragraph No. 5 of the appellate order.
+		</Para>
+		<Para>
+			<Bold>15.</Bold> The learned Assessing Officer has noted as
+			under :
+		</Para>
+		<Quote>
+			<Para2>
+				”4.1 During the year under consideration the assessee
+				has declared earnings before exceptional items and tax at Rs. 347.5
+				crores. The assessee has claimed Rs. 918.68 crores as exceptional
+				items due to which its profit before tax shrinks to a loss of Rs.
+				570.83 crores.
+			</Para2>
+			<Para2>
+				4.2 It is seen from the notes to accounts, item 40 deals
+				with the exceptional items. The assessee was asked to provide details
+				of such expenses vide notice under section 142(1), dated November
+				11, 2019. Vide its submissions dated December 6, 2019, the assessee
+				has -provided details of such expenses claimed in the profit and
+				loss account.
+			</Para2>
+			<Para2>
+				4.3 Item 40(a) to the notes deals with the ‘debit to profit
+				or loss on reassessment of the company’s ability to collect the
+				amount specified in note 56. The amount debited towards this head
+				is Rs. 177.50 crores. It is further seen that this amount has not
+				been added back to the total income of the assessee. The assessee
+				was show caused to explain<page no="728"></page>why such amount should not be added back
+				to the total income of the assessee.
+			</Para2>
+			<Para2>
+				4.4 Vide submissions dated December 11, 2019 the assessee
+				has provided the following explanation :
+			</Para2>
+			<Para3>
+				‘Pursuant to the agreement between the company and Ibrox -Aviation
+				and Trading P. Ltd. (IAPL) certain identified assets and -liabilities
+				comprising of ICDs, security deposits, other receivables, interest
+				on ICDs and payables from/to the Essar group were assigned to Ibrox
+				Aviation and Trading P. Ltd. In view of the same, VOTL received
+				an amount of Rs. 4.79 crores from IAPL as a consideration for transfer
+				of net value of identified assets and liability (copy of agreement
+				attached herewith).
+			</Para3>
+			<Para3>
+				Pursuant to the said agreement, the company incurred one-time exceptional
+				loss of Rs. 177.54 crores (net of expected credit loss (ECL) of
+				Rs. 73.80 crores) for the year which has been accounted in the books
+				of account as under :<Table>
+					<TBody>
+						<Row>
+							<Entry>
+								<Para>Particulars</Para>
+							</Entry>
+							<Entry>
+								<Para>Amount in (Rs. in cr.)</Para>
+							</Entry>
+						</Row>
+						<Row>
+							<Entry>
+								<Para>
+									David to profit of loss on reassessment of the company’s ability
+									to collect the amount specified
+								</Para>
+							</Entry>
+							<Entry>
+								<Para>251.30</Para>
+							</Entry>
+						</Row>
+						<Row>
+							<Entry>
+								<Para>Less : ECL</Para>
+							</Entry>
+							<Entry>
+								<Para>(73.80)</Para>
+							</Entry>
+						</Row>
+						<Row>
+							<Entry>
+								<Para>Net charge to exceptional item</Para>
+							</Entry>
+							<Entry>
+								<Para>177.50</Para>
+							</Entry>
+						</Row>
+					</TBody>
+				</Table>
+			</Para3>
+			<Para2>
+				4.5 The assessee further goes on to explain the allowability
+				of -various items mentioned in the assignment agreement as per the Income-tax
+				Act. The submission of the assessee is discussed below :
+			</Para2>
+			<Para3>
+				‘<Italics>Loss on transfer of ICDs and interest thereon :</Italics>
+			</Para3>
+			<Para4>
+				Section 36(1)(vii) of the Act provides that subject to the
+				provisions of section 36(2) of the Act, the amount of bad debt which
+				is written off as irrecoverable in the accounts of the assessee
+				shall be allowed as a deduction in computing business income. Further, -section
+				36(2) of the Act provides the condition for claiming deduction under
+				section 36(1) of the Act, inter alia, including :
+			</Para4>
+			<Para5>
+				• Debt or part thereof in respect of which deduction is -proposed
+				to be claimed should be taken into account in computing the income
+				of the assessee of the previous year in which this amount of such
+				debt or part thereof is written off or of an earlier year, or
+			</Para5>
+			<Para5>
+				• Debt or part thereof in respect of which deduction is -proposed
+				to be claimed represents money lent in the ordinary course of business
+				of money lending under section 36(1)(vii) of the Act.
+			</Para5>
+			<page no="729"></page>
+			<Para3>
+				In the case of the company, the loss of assignment, inter
+				alia, includes ICDs and interest on ICDs. The interest on ICDs have
+				been offered to tax as business income in previous years. Consequently, based
+				on the provisions of the law and fact of our case, this amount is clearly
+				allowable as a deduction.’
+			</Para3>
+			<Para2>
+				4.5.2 The submissions made by the assessee in relation to
+				loss on transfer of ICDs and interest thereon have been perused.
+				As per the assessee’s own submissions vide submissions dated September
+				12, 2019, the assessee’s business is that of integrated oil terminal
+				situated at Vadinar, Gujarat.
+			</Para2>
+			<Para2>
+				It has a capacity of 58 MMTPA and handles crude oil and petroleum
+				products. These facilities cater to provide services only to Nayara
+				Energy Ltd. (formerly known as Essar Oil Ltd.).
+			</Para2>
+			<Para2>
+				4.5.3 The assessee is taking refuge only on the thin ground
+				that in earlier year it has recognised interest income as business
+				income. Hence, it may be construed to be in money lending business.
+				The -surmise of the assessee is not acceptable. To put things in
+				perspective the following facts should be noted :
+			</Para2>
+			<Para3>
+				1. The assessee-Vadinar Ports and Terminals Ltd (VPTL) and Vadinar
+				Oil Terminal Ltd. (VOTL) has received inter-corporate deposits (ICD)
+				from Essar Oil and Essar Ports Ltd. in earlier years. The funds
+				out of these ICDs are advanced as ICDs to Essar group companies,
+				which are shareholder or subsidiaries of Essar Oil.
+			</Para3>
+			<Para3>
+				2. That for many years interest payments against ICD were accrued
+				but not paid and stood in the books as payable.
+			</Para3>
+			<Para3>
+				3. No business rational has been submitted by the assessee
+				for taking ICDs from a company and advancing it to the shareholders/subsidiaries
+				of that same company, suggesting that these transactions are not
+				out of usual business transaction.
+			</Para3>
+			<Para3>
+				4. Inter-corporate deposits are instruments in which, the
+				initiation is at the instance of the depositor, i. e., the giver
+				who has surplus funds, as against in the case of a loan where the
+				transaction is -initiated at the instance of the borrower who is
+				in need of the money. Further in the case of an ICD, the amount
+				is repayable on demand whereas a loan is repayable on the conclusion
+				of the agreed tenure. The assessee has booked interest cost to forward
+				ICDs to group -concern. This is against the very nature of an ICD.
+				The ICD should be out of surplus funds with the company.
+			</Para3>
+			<page no="730"></page>
+			<Para3>
+				5. That during the previous assessment proceedings the assessee has
+				failed to prove that borrowed money had not been utilised for non-business
+				purposes. This is fact on record reference is drawn to previous
+				assessment orders of the assessee.
+			</Para3>
+			<Para3>
+				6. That additions were made by the Assessing Officer on account of
+				interest claimed under section 36(1)(iii) of the Act.
+			</Para3>
+			<Para2>
+				4.5.4 Without prejudice to the facts mentioned above, this
+				is not a case where the debts were written off due to inability
+				in recovering the debts, but write off has happened as a result
+				of assignment of such debts to the assessee’s group company Ibrox
+				Aviation and -Trading P. Ltd. (IATPL) in a single accounting year
+				the assessee has assigned the dates to a group company (which is
+				not an asset reconstruction company) and has taken a haircut of
+				whooping Rs. 251.30 crores in its books of account. The transaction
+				with IATPL is -discussed in paragraph 3.7 in detail. Further as
+				discussed in the -preceding paragraph in the case of an ICD, the
+				amount is repayable on demand whereas the loan is repayable on the
+				conclusion of the agreed tenure. Had the assessee had doubts about
+				a particular ICD being recovered back, it would have recalled the
+				ICD in that year itself.
+			</Para2>
+			<Para2>
+				4.5.5 It is thus clear from the facts mentioned above that
+				the assessee in previous year had advanced ICDs to its group concerns
+				from the ICDs from group entities and loans taken from financial
+				institutions. That such advances made to group concerns have been
+				written off during the year not on account of failure to recover
+				the debts, but on account of reassignment of such deposits to a
+				group concern. Against the reassignment of net deposits worth Rs.
+				250 crores, the assessee has received a sum of Rs. 4.8 crores. As
+				a result, the assessee has booked a loss of Rs. 251.30 crores. It
+				is thus clear that this is not a case of advance turning bad, but
+				a sham transaction to book fictitious expenses in the books of account.
+			</Para2>
+			<Para2>
+				4.6 Again, vide submissions dated December 24, 2019 the assessee stated
+				that the loss incurred on ICDs and security along with accrued interest
+				is allowable as deduction under section 36(1)(vii) read with section
+				36(2) and under section 28(i). The submissions of the assessee are
+				not acceptable. The conditions in relation to business loss are clear
+				:
+			</Para2>
+			<Para3>
+				1. That it should be incidental to the carrying on of the
+				business.
+			</Para3>
+			<page no="731"></page>
+			<Para3>2. Should be on revenue account.</Para3>
+			<Para3>3. Should be a real loss and not a notional fictitious one.</Para3>
+			<Para3>
+				4. Should have actually been incurred and not anticipated
+				as -certain to occur in future.
+			</Para3>
+			<Para3>
+				5. Should not be prohibited from being deducted under the -provisions
+				of the Act.
+			</Para3>
+			<Para2>
+				Hence the loss was not incidental to the business, nor was
+				of a -revenue account. It was a future anticipated loss. Clearly
+				the loss claimed on ICD is not allowable under section 28(i) of
+				the Act.
+			</Para2>
+			<Para2>
+				4.7 Agreement with Ibrox Aviation and Trading P. Ltd. : As -discussed
+				above the assessee has booked loss on account of assignment of debts
+				to its group concern IATPL. IATPL is an Essar group company and
+				is not an asset reconstruction company. In fact, IATPL is a shareholder
+				of Essar Oil. Essar Oil has advanced ICDs to VPTL and VOTL the agreement
+				to assign certain assets and liabilities of the assessee-company
+				to IATPL was executed on March 31, 2017. In the agreement Essar Ports
+				and Shipping Ltd., Mauritius has acted as the guarantor.
+			</Para2>
+			<Para2>
+				4.7.2 As per the agreement with VOTL the seller of identified assets
+				and liabilities would sell its assets and liabilities to IATPL for
+				a consideration of Rs. 4.8 crores. The identified assets total to
+				Rs. 955.4 crores. The assets where ICDs advanced by the assessee
+				to five -entities that are either subsidiaries or shareholders of
+				Essar Oil. The identified liabilities were Rs. 699 crores of ICD
+				the assessee owed to Essar Oil Ltd. Thus, net assets of Rs. 256.4
+				crores were assigned to IATPL. Against such assignment IATPL paid
+				a sum of Rs. 4.8 crores to the assessee. The differential amount
+				of Rs. 251.3 crores were booked by the assessee as loss in its books
+				of account.
+			</Para2>
+			<Para2>
+				4.7.3 Clearly the entire transaction is an intragroup arrangement, which
+				has led to the assessee claiming a loss of Rs. 251.6 crores. The loss
+				is a national one and not actual loss. The assessee has brought nothing
+				on record to show that efforts were made to recover the ICD before
+				assigning the same to a group concern at a steep haircut.
+			</Para2>
+			<Para2>
+				4.8 In the light of the facts brought out in the preceding
+				paragraphs, the loss claimed by the assessee of Rs. 251.30 crores
+				on account of company’s inability to collect ICD and interest thereon,
+				the amount specified is disallowed. Penalty proceedings under section 270A
+				of the Income-tax Act are initiated separately for misreporting and
+				under-reporting of income.
+			</Para2>
+			<Para2>(Addition : Rs. 2,51,30,00,000).”</Para2>
+		</Quote>
+		<page no="732"></page>
+		<Para>
+			<Bold>16.</Bold> Thus the learned Assessing Officer held that
+			it is a sham transaction and loss is fictitious, it is not allowable
+			as bad debt and not allowable as business loss.
+		</Para>
+		<Para>
+			<Bold>17.</Bold> The assessee challenged this addition before
+			the learned Commissioner of Income-tax (Appeals). In para Nos. 5.1
+			to 5.7 the learned -Commissioner of Income-tax has discussed the
+			proceedings before the learned Assessing Officer. In paragraph No.
+			5.8 onwards the findings of the learned Commissioner of Income-tax
+			(Appeals) are rendered as under :
+		</Para>
+		<Quote>
+			<Para2>
+				”5.8 At the appellate stage, the appellant has contended
+				that loss arising on transfer of ICDs is allowable as a deduction.
+				However, if the assessee had doubts about a particular ICD being
+				recovered back it would have recalled the ICD in that year itself
+				instead of bearing loss arising on transfer. Here the loss was not
+				incidental to the business, nor was of revenue account. As pointed
+				out by the Assessing Officer, the assessee has booked a loss on
+				account of assignment of debts to its group concern IATPL. IATPL
+				is Essar group company and is not an asset reconstruction company.
+				In the fact, IATPL is a shareholder of Essar Oil. Essar Oil had
+				advanced ICDs to VPTL and VOTL and the agreement to assign certain
+				assets and liability of the assessee-company to IATPL was executed
+				on March 31, 2017. Appellant’s contention that the loss on account
+				of company’s inability to collect the amount specified of Rs. 251.30
+				crores cannot be entertained since, it has not proven or made any
+				efforts to collect the said amount. The appellant has failed to
+				prove that how it was unable to collect the amount also brought
+				nothing on record to show that efforts were made to recover the
+				ICD before assigning the same to a group -concern.
+			</Para2>
+			<Para2>
+				5.9 In this respect, the appellant has relied upon some case
+				law. However, they are not relevant in the case of appellant. In
+				the case of <Reference>
+					<CRTo>
+						<Title>
+							CIT v. Investa Industrial Corporation
+							Ltd.
+						</Title>
+					</CRTo>
+				</Reference><Footnote>3</Footnote> the financial
+				position of the company being managed by the assessee deteriorated
+				and the company went under liquidation, the assessee wrote of the
+				principal and interest outstanding from the company in its books
+				of account and claimed the same as a bad debt or business loss.
+				Wherein the honourable High Court held if as a result of the managed
+				company having gone into liquidation, the advances became irrecoverable,
+				the loss would have to be regarded as a trading loss and the same
+				would have to be allowed as a deduction while computing the income
+				of the<page no="733"></page>assessee. However, in case of appellant the fact is different,
+				it has not gone into liquidation and that the advances became irrecoverable.
+			</Para2>
+			<Para2>
+				5.10 The next claim made by the appellant that as per the
+				provisions of section 36(2) of the Act, the amount of bad debt which
+				is written off as irrecoverable in the accounts of the assessee
+				shall be allowed as a deduction in computing business income. The
+				basic requirement to allow bad debt is that the amount claimed as
+				bad debt should have offered in earlier year as revenue. However,
+				the year in which the revenue pertaining to its data was not offered
+				with -evidence and the appellant has failed to justify the claim
+				of bad debts under section 36(1)(vi) of the Act. In absence of any
+				critical evidence before me, I am unable to accept the contention
+				of the appellant and held that the loss is a notional one and not
+				actual loss.
+			</Para2>
+			<Para2>
+				5.11 Besides, claim is made by the appellant that it has
+				been -consistently treating the interest income arising from ICD
+				is and the receivables given to its various group companies as profits
+				and gains arising from business or profession in its return of income.
+				This fact has not been denied by Assessing Officer anywhere in his
+				order. The argument made by the appellant cannot absolve it from
+				its liability. The Assessing Officer had placed on record the entire
+				gamut of finding and there is no further requirement for elaboration.
+				In view of the overall facts discussed as above addition made of
+				Rs. 2,51,30,00,000 on account of loss on transfer of ICD is apparent.
+				This ground of appeal is dismissed.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>18.</Bold> Thus the learned Commissioner of Income-tax
+			(Appeals) confirmed the disallowance on all three aspects. Therefore, the assessee
+			is in appeal before us. Assessee has filed a paper book containing
+			628 pages initially and further paper book containing 629 pages
+			to 914 pages were submitted on June 19, 2023 as additional evidence. The assessee
+			has also submitted in response to query raised by the Bench a paper
+			book containing five -different documents to substantiate it claim
+			in response to the date of hearing held on February 14, 2024.
+		</Para>
+		<Para>
+			<Bold>19.</Bold> The learned authorised representative first
+			took us to page No. 230 of the paper book to show that as per annexure
+			A details of assets and -liabilities assigned under agreement with
+			Ibrox Aviation and Trading P. Ltd. are mentioned as five different
+			inter-corporate deposits amounting to Rs. 738.25 crores, security
+			deposit amounting to Rs. 3 crores along with other receivable or
+			advances of Rs. 2.18 crores over and above outstanding interest
+			due of Rs. 211.94 crores making the total assets assigned to the Ibrox Aviation
+			and Trading P. Ltd. of Rs. 955.38 crores. The assessee has<page no="734"></page>also
+			a liability in the name of Essar Oil Ltd. of ICD of Rs. 699.29 crores which
+			is also assigned to that company. Thus, it was explained that the total
+			assets of Rs. 955.38 crores and a liability of Rs. 699.29 crores
+			have been assigned having a net asset value of Rs. 256.09 crores
+			for Rs. 4.79 crores and therefore a loss of Rs. 251.30 crores were
+			incurred by the assessee on its transaction. Thus, it was stated
+			that the claim of the assessee is either to allow the same as bad
+			debtor to allow it as business loss.
+		</Para>
+		<Para>
+			<Bold>20.</Bold> He submitted that the assessee has already
+			received the interest out of the outstanding sum amounting to Rs.
+			75.84 crores which has been offered by the assessee as income during
+			the year or in earlier years and therefore even if the part of the
+			income has been offered for taxation in the earlier years, it satisfies
+			the condition laid down under section 36(2) of the Act. It is not
+			the condition that the whole of the amount which has been written
+			off should have been shown as income in the earlier years. Therefore,
+			his argument was that when the income has been shown of interest on
+			such inter-corporate deposits, even if part and not full, and then
+			write off debt of inter-corporate deposit as well as outstanding
+			accrued interest as a bad debts is eligible.
+		</Para>
+		<Para>
+			<Bold>21.</Bold> For this proposition he relied upon the decision
+			of honourable -Bombay High Court in the case of <Reference>
+				<CRTo>
+					<Title>CIT v. Pudumjee Pulp and Paper Mills Ltd.</Title>
+				</CRTo>
+			</Reference>
+			<Footnote>4</Footnote>,
+			wherein one part of the debt was offered to tax it was held that
+			it will satisfy the claim of deduction of that under section 36(1)(i)
+			of the Act. The learned authorised representative specifically referred
+			to the question raised before the honourable High Court in paragraph
+			No. 2, the facts that part of the bad debt was offered for income-tax
+			and then paragraph No. 12 where the honourable High Court allowed
+			the bad debts. He further referred to the decision of honourable
+			Bombay High Court in the case of <Reference>
+				<CRTo>
+					<Title>
+						CIT v. Shreyas
+						S. Morakhia
+					</Title>
+				</CRTo>
+			</Reference><Footnote>5</Footnote>, wherein
+			in case of a share broker unrealised value of shares from the clients
+			were held to be deductible under section 36(1)(vii) if brokerage
+			is taken to the profit and loss account. He further referred to
+			the question before the honourable High Court in paragraph No. (1)
+			and thereafter reference of Special Bench in paragraph No. (3) and argument
+			of the assessee in paragraph No. (4). He thereafter referred to paragraph
+			No. 14, wherein it has been held that where the assessee is a stock broker
+			on behalf of its client is as much a part of that of shares -transacted
+			as is the brokerage which is charged by the assessee on the transaction.
+			Therefore, his argument was that the assessee satisfies the conditions
+			laid down under the act for write-off of the bad debt.<page no="735"></page>Accordingly,
+			the assessee should be granted the same as a deduction as bad debt.
+			He further referred to the decision of the honourable Bombay High
+			Court in <Reference>
+				<CRTo>
+					<Title>
+						Pr. CIT v. Mahindra Engineering
+						and Chemical Products Ltd.
+					</Title>
+				</CRTo>
+			</Reference><Footnote>6</Footnote>,
+			dated October 27, 2021, wherein the facts clearly shows that when the
+			interest income is brought to tax as business income in the earlier assessment
+			years, advances made in the course of the business when return of
+			their should be allowed as a deduction under section 36(1)(vii) and
+			section 36(2)(i) of the Act. The learned authorised representative -specifically
+			referred to paragraph number three of the order wherein based on
+			the earlier decisions referred the honourable High Court in paragraph Nos.
+			10, 11 and 12 has decided the issue.
+		</Para>
+		<Para>
+			<Bold>22.</Bold> The learned authorised representative also
+			submitted that interest on inter-corporate deposits assigned wherein
+			it was submitted that total interest of Rs. 211.95 crores are assigned
+			and for the assessment year 2014-15 Rs. 42.74 crores have been offered
+			for income-tax, a sum of Rs. 38.81 crores have been offered for
+			tax in the assessment year 2015-16, a sum of Rs. 98.68 crores have
+			been offered for the assessment year 2016-17 and a sum of Rs. 17.91
+			crores have been offered for income-tax. Thus, the assessee fulfils
+			the condition under section 36(2) of the Act. Therefore, he submits
+			that the write-off of the inter-corporate deposit is eligible for deduction
+			as a bad debt.
+		</Para>
+		<Para>
+			23. On February 14, 2024 after hearing the Bench made a following order
+			sheet entry :
+		</Para>
+		<Quote>
+			<Para2>
+				”The assessee has filed appeal mainly on the issue
+				of disallowance of Rs. 251.30 crores and other additions. For this
+				loss assessee has sold its and certain advances of Rs. 955 crores
+				and liabilities of Rs. 6,99 crores to a related party for a consideration
+				of only Rs. 4.8 crores and claimed deduction of Rs. 251 crores.
+				The assessment order clearly states that there is no business rational
+				of above transaction. On reading of annual report also we found
+				that there is a scheme of arrangement and change in holding company,
+				in the auditor’s report there is a qualification and management
+				reply thereto. As per note No. 56 of annual report, it is evident
+				that the above transactions are offshoot of larger understanding
+				between Essar Oil Ltd. entering into share purchase agreement. Therefore,
+				rational of sale of assets worth Rs. 955 crores included in the
+				above when it is realising interest, sold by the assessee along
+				with liability of Rs. 6.99 crores for Rs. 4.8 crores only need to
+				be examined. The authorised representative is directed to explain
+				the same.”
+			</Para2>
+		</Quote>
+		<page no="736"></page>
+		<Para>
+			<Bold>24.</Bold> In response to the above order sheet enquiry
+			from the Bench, the assessee submitted a letter dated May 20, 2024. The learned
+			authorised representative invited our attention to press note placed
+			at page No. 948-947 of <Italics>Business Today</Italics> wherein
+			it was stated that Essar Rosneft Complete deal worth US $ 12.9 billion.
+			He further submitted that various news reports placed at page Nos.
+			915 to 1026 are publicly available documents which explains the
+			rationale of the above deal. He further submitted that on attention
+			to page No. 231 is again that the assessee has transferred both the
+			assets and liabilities. The inter-corporate deposits were an asset
+			having the grave doubt about recovery of the amount. The assessee
+			was hopeful if there is a change in shareholding there would be
+			improvement in the chances of recovery. He referred to 5 inter-corporate
+			deposits which were doubtful of recovery part of the transfer he
+			also referred to liability payable of Rs. 699 crores also part of
+			the transferred asset. With reference to the rational, he referred
+			to paper book page Nos. 1027 to 1044 which is a credit rating for
+			bank facilities of Vadinar Oil Terminal Ltd. by care ratings dated May
+			23, 2018. He referred to page No. 1030 wherein detailed rational
+			of Essar Oil Ltd. was mentioned in that report. He referred to page
+			No. 1035 of that care ratings report relating to Vadinar Oil Terminal
+			Ltd. He further referred to the financial statement of the assessee
+			for the assessment years 2018-19 to 2020-21 to show that there is
+			a decline in interest cost, there is decrease in borrowing there
+			is increase in gross revenue and corresponding increase in profit
+			before taxes. Thus, he submitted that change in shareholders and
+			transfer of assets and liabilities is for the benefit of assessee-company
+			and that is the justification why the assets and liabilities are transferred
+			together. It was further stated that the interest is not realised but
+			accrued to the assessee and is outstanding. It was further submitted that
+			transfer of these assets is based on the valuation report of grant Thornton
+			issued in April 2017 and therefore the transaction made by the assessee
+			is for the benefit of the assessee.
+		</Para>
+		<Para>
+			<Bold>25.</Bold> The learned authorised representative categorically
+			submitted that the assessee does not have a share purchase agreement
+			and so it is not available and hence not furnished. It stated that
+			such share purchase agreement is between Essar group of company
+			with the buyer. The -assessee does not have any access to such agreement
+			and therefore it is not submitted.
+		</Para>
+		<Para>
+			<Bold>26.</Bold> Though the learned authorised representative
+			did not state in -writing in letter dated May 28, 2024 that the
+			assessee does not have a share purchase agreement and therefore
+			it is not available and hence it is not<page no="737"></page>submitted. However, it was
+			an oral argument of the assessee though the Bench specifically asked
+			as per the order sheet.
+		</Para>
+		<Para>
+			<Bold>27.</Bold> The learned authorised representative further
+			referred to the response of the management on the qualification
+			in the audit report wherein it is mentioned that after due consideration,
+			the company sold the portfolio of outstanding receivables amounting
+			to Rs. 2,569.42 crores and payable is amounting to Rs. 2,298.21
+			crores from certain related and other entities to Essar Steel Jharkhand
+			Ltd. and Ibrox Aviation and Trading P. Ltd., at fair valuation.
+			On the basis of fair valuation of these outstanding receivables
+			and payables, the company has debited to the profit and loss Rs.
+			177.50 crores as an exceptional item, the company expects to realise
+			the carrying values of the investment and other deals through the
+			escrow arrangement shortly. Therefore, there was a justification
+			and rational for the above deal.
+		</Para>
+		<Para>
+			<Bold>28.</Bold> The learned Commissioner of Income-tax-Departmental
+			representative vehemently supported the order of the learned lower
+			authorities and stated that it is a sham transaction as stated by
+			the learned Assessing Officer confirmed by the learned Commissioner
+			of Income-tax (Appeals). The assessee has not submitted the relevant
+			document before the lower authorities on this issue. Further the
+			clubbing of the assets and liabilities together does not have any
+			rational. He further stated that the deduction is neither available
+			as bad debt as claimed by the assessee before the learned Assessing
+			Officer and not also as a business loss. He further submitted that the
+			learned Assessing Officer has given a detail reason which are not -controverted
+			by the assessee.
+		</Para>
+		<Para>
+			<Bold>29.</Bold> The learned Commissioner of Income-tax-Departmental
+			representative further submitted that all the decision cited by
+			the learned authorised representative are taking the claim that
+			the claim of the assessee is under the head bad debt, it is not
+			about that but a sham transaction which has been claimed as a deduction
+			or business loss by the assessee. He submitted that when the gross
+			assets of the value of Rs. 955 crores which are earning good income
+			along with the liability of Essar Oil Ltd. of Rs. 699.29 crores having
+			the net asset value of Rs. 256.09 crores are sold to a sister concern for
+			only Rs. 4.79 crores itself shows that the transaction is sham.
+		</Para>
+		<Para>
+			<Bold>30.</Bold> He further submitted that there is a qualification
+			in the auditor’s report wherein there is a qualified opinion is
+			given by the auditor. He -further referred to the profit and loss
+			account of the assessee wherein as per note No. 40 a sum of Rs.
+			918.68 crores have been written off. He -further referred to note
+			No. 40 wherein a sum of Rs. 177.50 crores have been debited to the
+			profit and loss account as specified in note No. 56. He<page no="738"></page>also took
+			us to note No. 56, wherein there is an offshoot of the transaction of
+			sale of major shareholders of the Essar Oil Ltd. selling the stake
+			to the third parties and thereafter several agreements entered wherein
+			this sum is mentioned. The assessee has failed to produce despite
+			the Bench asking for the same agreement. He further stated that
+			if the assessee is not aware or not in possession of that agreement
+			how it can refer to in the annual accounts of the assessee and then
+			make a reference of the provision of investment. He further referred
+			to note No. 16 and note No. 21 which are also interlinked. Therefore,
+			his argument was that the assessee is hiding behind the original
+			agreement entered by the majority shareholders of Essar Oil Ltd.
+			with third-party. He therefore submitted that the claim of the assessee
+			is neither bona fide, nor allowable under the provisions of the law
+			and is based on hidden facts.
+		</Para>
+		<Para>
+			<Bold>31.</Bold> We have carefully considered the rival contention
+			and perused the orders of the learned lower authorities. Short issue
+			involved in this appeal is that when the assessee has transferred
+			its certain financial assets along with certain financial liabilities
+			for a consideration to a sister concern, loss arising thereon whether
+			should be considered as bad debt, deductible as a business loss
+			or it is not at all allowable to the assessee.
+		</Para>
+		<Para>
+			<Bold>32.</Bold> The facts succinctly stated shows that the assessee
+			has transferred certain inter corporate deposits with its group
+			companies (Essar group) and certain inter corporate liabilities
+			in the same group and has incurred a loss. The assessee has transferred
+			following inter corporate deposits/advances/interest accrued thereon :
+			<Table>
+				<TBody>
+					<Row>
+						<Entry>
+							<Para>
+								Sl.
+								No.
+							</Para>
+						</Entry>
+						<Entry>
+							<Para>Name of the company</Para>
+						</Entry>
+						<Entry>
+							<Para>
+								Total amount
+								(Rs. in crores)
+							</Para>
+						</Entry>
+					</Row>
+					<Row>
+						<Entry>
+							<Para>1.</Para>
+						</Entry>
+						<Entry>
+							<Para>Essar Bulk Terminal Ltd.</Para>
+						</Entry>
+						<Entry>
+							<Para>145.60</Para>
+						</Entry>
+					</Row>
+					<Row>
+						<Entry>
+							<Para>2.</Para>
+						</Entry>
+						<Entry>
+							<Para>
+								Imperial Consultants
+								and Securities
+							</Para>
+						</Entry>
+						<Entry>
+							<Para>306.87</Para>
+						</Entry>
+					</Row>
+					<Row>
+						<Entry>
+							<Para>3.</Para>
+						</Entry>
+						<Entry>
+							<Para>
+								Essar Steel India
+								Ltd.
+							</Para>
+						</Entry>
+						<Entry>
+							<Para>305.53</Para>
+						</Entry>
+					</Row>
+					<Row>
+						<Entry>
+							<Para>4.</Para>
+						</Entry>
+						<Entry>
+							<Para>Essar Shipping Ltd.</Para>
+						</Entry>
+						<Entry>
+							<Para>54.95</Para>
+						</Entry>
+					</Row>
+					<Row>
+						<Entry>
+							<Para>5.</Para>
+						</Entry>
+						<Entry>
+							<Para>Essar Bulk Terminal Paradip Ltd.</Para>
+						</Entry>
+						<Entry>
+							<Para>142.53</Para>
+						</Entry>
+					</Row>
+					<Row>
+						<Entry/>
+						<Entry>
+							<Para>Total</Para>
+						</Entry>
+						<Entry>
+							<Para>955.38</Para>
+						</Entry>
+					</Row>
+				</TBody>
+			</Table>
+		</Para>
+		<Para>
+			<Bold>33.</Bold> The assessee has also transferred the liability
+			of following loan :
+		</Para>
+		<Para>Essar Oil Ltd. 	Rs. 699.29 crores</Para>
+		<Para>
+			<Bold>34.</Bold> Thus, the net asset value of the assets transferred
+			is Rs. 256.09 crores. The issue is that it is sold to a sister concern
+			IATPL only for Rs. 4.98 crores. Thus, the assessee has incurred
+			loss of Rs. 251.30 crores. Whether these losses allowable as bad
+			debt, business loss or not.
+		</Para>
+		<page no="739"></page>
+		<Para>
+			<Bold>35.</Bold> To reach at the conclusion, following important
+			fact noted from the annual report of the assessee-company are required
+			to be mentioned. There is a scheme of arrangement and change in
+			holding company as per directors’ report at page No. 13 of the annual
+			report of the company wherein it is mentioned as under :
+		</Para>
+		<Quote>
+			<Para2>”Scheme of arrangement and change in holding company.</Para2>
+			<Para2>
+				As on March 31, 2016, Essar Ports Ltd. (EPL) was the holding -company
+				of the company. In view of the composite scheme of arrangement amongst
+				the company, Vadinar Ports and Terminals Ltd., Essar Power and Minerals
+				Ltd., Yash Hotels P. Ltd., Hazira Coke Ltd. and Essar Ports Ltd.
+				(the scheme) as approved by the honourable High Court of Gujarat
+				effective July 1, 2016, Essar Power and -Minerals Ltd. (EPML) and
+				Vadinar Ports Terminals Ltd. have merged with your company.
+			</Para2>
+			<Para2>
+				As a result, your company has issued equity shares to all
+				the shareholders of EPML as on the record date fixed for the same.
+				The shares held by EPL in your company have been cancelled as a
+				consequence of the scheme.
+			</Para2>
+			<Para2>
+				In view of the above, upon the implementation of the scheme Essar
+				Ports and Shipping Ltd .(EPSL), Mauritius became the holding company
+				of your company.
+			</Para2>
+			<Para2>
+				The shares held by EPSL were acquired by Essar Steel Jharkhand Ltd.
+				(ESJL) and as a consequence ESJL became the holding company of your
+				company effective March 31, 2017.
+			</Para2>
+			<Para2>
+				Thereafter, Essar Oil Ltd. has acquired the entire shareholding
+				held by ESJL constituting 97.63 per cent. of share capital of your
+				company as on the date is the holding company.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>36.</Bold> On examination of the annual report of company,
+			the profit and loss account show an exceptional item debited of
+			Rs. 918.68 crores details of which is available in note No. 40.
+			Note No. 40 details of the exceptional item shows that :
+		</Para>
+		<Para2>
+			(a) Debit to profit and loss on reassessment of the company’s
+			ability to collect the amount specified in note No. 56 Rs. 177.50
+			crores.
+		</Para2>
+		<Para>
+			<Bold>37.</Bold> As there is reference of note of 56 that
+			note speaks as under :
+		</Para>
+		<Quote>
+			<Para2>
+				”56. As reported in the earlier year, majority stake
+				in the company was to be acquired by Essar Oil Ltd. (EOL) as a condition
+				precedent to the arrangements (SPAs) entered into by the majority
+				shareholders of EOL to sell their stake to third parties, and in
+				escrow arrangement was to be put in place to apply the sale consideration,
+				to the extent<page no="740"></page>required, towards discharge of amounts due to the
+				company from certain related parties. The majority stake in the
+				company has since been acquired by EOL. However, the closure of
+				sale of the stake in EOL is taking longer than previously envisaged.
+				The company in the interim continued to transact with the related
+				parties and has -reassessed its ability to realise the dues from
+				related parties (including investment in a subsidiary company pursuant
+				to acceptance of offer to buy-back the shares from the subsidiary).
+				Through the said escrow arrangement, based on which it has debited
+				to the statement of profit and loss Rs. 177.50 crores as an exceptional
+				item. The carrying values of the investment and other dues to be
+				realised through the escrow arrangement aggregate on March 31, 2017,
+				to Rs. 3,613.44 crores (comprises investment in equity shares of
+				enneagon of Rs. 3,033.21 crores refer note No. 16, and other receivables
+				of Rs. 580.23 crore-refer note No. 21).”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>38.</Bold> Note No. 57 on going concern is also required
+			to be considered which is as under :
+		</Para>
+		<Quote>
+			<Para2>
+				”57. <Italics>Going concern</Italics>
+			</Para2>
+			<Para2>
+				The ability of the company to continue as a going concern
+				is predicated on the successful implementation of SPAs together
+				with the escrow arrangement for deployment of the sales consideration towards
+				the liquidation of amounts due to the company from certain related
+				parties and have the required cash flows to meet its financial obligations.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>39.</Bold> It is interesting to note that the assessee
+			has entered into an agreement for transfer of identified assets
+			and liabilities between Vadinar Oil Terminal Ltd. and Essar Steel
+			Jharkhand Ltd. on March 31, 2017 wherein details of the third parties
+			are identified assets amounting to Rs. 1,614 crores along with the
+			amount of identified liability of Rs. 1,599 crores -having net value
+			of Rs. 15.14 crores were sold for net consideration of Rs. 15.1
+			crores. Therefore, in sale of assets and liabilities to Essar Steel Jharkhand
+			Ltd. there is no loss or profit.
+		</Para>
+		<Para>
+			<Bold>40.</Bold> The transaction with Ibrox Aviation and Trading
+			P. Ltd. of Rs. 4.78 crores are described in the related party transaction
+			in note No. 58 to the annual accounts wherein it is stated that
+			inter-corporate deposits taken being liability of Rs. 699.29 crores
+			and the assets having a value of Rs. 955.37 crores have been transferred
+			to that company for Rs. 4.78 crores whose net asset value is Rs.
+			256.14 crores.
+		</Para>
+		<Para>
+			<Bold>41.</Bold> On the same date (along with the sale of
+			similar assets to Essar Steel Jharkhand Ltd.) on March 31, 2017
+			and agreement for transfer of identified<page no="741"></page>assets and liabilities
+			was entered into between the assessee and Ibrox -Aviation and Trading
+			P. Ltd., wherein assets to the tune of Rs. 955.4 crores and a liability
+			of Rs. 699 crores were transferred to that company for a -consideration
+			of Rs. 4.8 crores having a net asset value of Rs. 256.40 crores.
+		</Para>
+		<Para>
+			<Bold>42.</Bold> The liability in both the cases were pertaining
+			to Essar Oil Ltd. Rs. 1,599 crores were transferred to Essar Steel
+			Jharkhand Ltd. and Rs. 699 crores were transferred to Ibrox Aviation
+			and Trading P. Ltd.
+		</Para>
+		<Para>
+			<Bold>43.</Bold> This is also to be noted that that in transaction
+			with Essar Steel Jharkhand Ltd., no profit or loss was incurred
+			on transfer of the group inter corporate deposits and liability
+			of Essar Oil Ltd. However, in case of the assessee in transaction
+			with Ibrox Aviation and Trading P. Ltd. the assessee has incurred
+			loss of Rs. 251.30 crores. Out of these Rs. 251.30 crores the assessee
+			has reduced Rs. 73.80 crores being the expected credit loss resulting into
+			net tax charged to exceptional item of Rs. 177.50 crores.
+		</Para>
+		<Para>
+			<Bold>44.</Bold> It is also interesting that auditors have
+			given a qualified opinion as per audit report dated August 14, 2017.
+			The basis for qualified opinion as per page No. 33 of the annual
+			report is as under :
+		</Para>
+		<Quote>
+			<Para2>
+				”<Italics>Basis for qualified opinion</Italics>
+			</Para2>
+			<Para2>
+				Attention is invited to note No. 56 regarding the ability
+				of the company to realise investment in a subsidiary company and
+				amounts due from certain related parties, which is predicated on
+				successful closure of the sale of shares by the majority shareholders
+				of Essar Oil Ltd., The holding company and application of the sales
+				consideration towards the discharge of the aforesaid amounts, as
+				explained in the note. In view of the delay in achieving closure
+				of the sale transaction and the consequent collection of the amounts
+				as envisaged, and -further the reassessment by the company of its
+				ability to realise the entire investment and other dues through
+				the escrow arrangement, we are unable to express an opinion on the
+				recover ability of the -caring values of the investment and the
+				dues aggregating to Rs. 3,613.44 crores as of March 31, 2017 or
+				debit to the statement of profit and loss of Rs. 177.50 crores for
+				the year.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>45.</Bold> Thus, there is no qualification with respect
+			to transaction of sale of similar assets and liabilities to Essar
+			Steel Jharkhand Ltd., but it is on transaction of Ibrox Aviation
+			and Trading P. Ltd. only.
+		</Para>
+		<Para>
+			<Bold>46.</Bold> Now it is interesting to note that the management
+			in its reply in the director’s report to the qualification of the
+			auditor as under :
+		</Para>
+		<page no="742"></page>
+		<Para2>
+			(a) Management response to qualification under basis for
+			qualified opinion in the auditor’s report on standalone and consolidated
+			financial statements :
+		</Para2>
+		<Quote>
+			<Para2>
+				“The company had receivable from various group companies
+				and other entities, operating in steel, shipping, and other sectors.
+				Due to the weakening of the sectors and data duration of the financial -condition
+				(including restructuring of that is) of these entities, a situation
+				has arise in wherein the value of the receivables from these entities
+				has significantly declined and recovery of their dues is likely to
+				take a substantial amount of time. The company, therefore, we, after
+				considering the report of an independent third-party, its ability to
+				collect the outstanding balances.
+			</Para2>
+			<Para2>
+				Further, as reported in the earlier year, controlling stake
+				being non-public shareholding in the company was to be acquired
+				by Essar Oil Ltd. (EOL) as a condition precedent to the share purchase
+				agreements (SPA) executed on October 15, 2016 by the majority stakeholders
+				of EOL to sell their shareholding to Petrol Complex Pte Ltd. and
+				Kesani Enterprises Co. Ltd. As a result, the company will no longer
+				remain a part of the Essar group and accordingly the company intends
+				to settle all its assets and liabilities and realise the dues from related
+				parties and other entities as envisaged in the transaction -documents
+				exist to pursuant to the SPAs.
+			</Para2>
+			<Para2>
+				After due consideration, the company sold the portfolio of
+				outstanding receivables amounting to Rs. 2,569.42 crores and payable amounting
+				to Rs. 2,298.21 crores from certain related parties and other entities
+				to Essar Steels Jharkhand Ltd. and Ibrox Aviation and Trading P.
+				Ltd., at fair valuation. On the basis of fair valuation of these
+				outstanding receivables and payables, the company has debited to
+				profit and loss Rs. 177.50 crores as an exceptional item. The -company
+				expects to realise the caring values of the investment and other
+				dues through the escrow arrangement shortly.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>47.</Bold> Thus, it is apparent that in the case of
+			transaction with Essar Steel Jharkhand Ltd. where the outstanding
+			receivable of sixteen parties amounting to Rs. 1,614.14 crores were
+			transferred, there is no decrease in fair market value of a single
+			rupee. Whereas on receivables transferred to Ibrox Aviation and Trading
+			P. Ltd. on transfer of receivables of Rs. 955.38 crores the loss
+			of Rs. 251.30 crores were recorded.
+		</Para>
+		<Para>
+			<Bold>48.</Bold> In both the cases the liability transferred
+			was with respect to Essar Oil Ltd. In the case of Essar Steel Jharkhand
+			Ltd. the liability of EOL of Rs. 1,599 crores were transferred whereas
+			in case of Ibrox Aviation and<page no="743"></page>Trading P. Ltd. the liability of Rs.
+			699.29 crores were transferred. It is to be noted that Essar Oil
+			Ltd. is the ultimate holding company of the assessee in view of
+			the change in the structure and management of shareholding of the
+			company.
+		</Para>
+		<Para>
+			<Bold>49.</Bold> We find that the assessee has produced the
+			report of Grant Thorton in April 2017 on recoverable values of receivables
+			from Essar Shipping Ltd. in terms of the report dated April 4, 2017.
+			On the report on recoverable values of receivable from Essar Shipping
+			Ltd. and Imperial Consultants and Securities, it was held that out
+			of the ICD including interest under the receivable of Essar Shipping
+			Ltd. of Rs. 55 crores the range of the recovery of the receivable
+			is only 93 per cent. to 99.4 per cent. and in the case of Imperial Consultant
+			and Securities Ltd. on ICD and interest another receivable of Rs.
+			306.9 crores the range of the receivable is only 44.6 per cent.
+			to 59 per cent. Similarly report on recoverable value of Essar Steel India
+			Ltd. as per report dated April 4, 2017, on outstanding of Rs. 305 crores,
+			it is stated that the interest of Rs. 80 crores are not recoverable
+			and on the balance sum of Rs. 224 crores the recovery would be in
+			the range of 5 per cent. to 14 per cent. Thus, out of the total
+			receivable of Rs. 955.38 crores, the recoverable report of only
+			Rs. 667.35 crores were placed before us, thus for the balance Rs.
+			328 crores there is no reply about the recover ability report.
+		</Para>
+		<Para>
+			<Bold>50.</Bold> All the reports of the Grant Thornton are
+			pertaining to the period April 2017 and were dated April 4, 2017
+			whereas the agreement with the Ibrox Aviation and Trading P. Ltd.
+			was entered into on March 31, 2017. Therefore, the consideration
+			value of Rs. 4.8 crores were decided earlier without having the
+			recover ability report of Grant Thorton Ltd. Therefore, in case
+			of sale of receivable to Essar Steel Jharkhand Ltd. nor losses incurred
+			but in case of transaction with Ibrox Aviation and Trading P. Ltd. loss
+			of Rs. 251 crores were incurred. Thus, there is no justification
+			of transfer of assets of 955.38 crores and the liability of Rs. 699.29
+			crores having a net asset value of Rs. 256.09 crores to a sister
+			concern for a meagre -consideration of Rs. 4.79 crores.
+		</Para>
+		<Para>
+			<Bold>51.</Bold> The assessee also submitted a resolution
+			passed by the circulation on January 18, 2017, placed at page No.
+			912 of the paper book wherein it is resolved as under :
+		</Para>
+		<Quote>
+			<Para2>
+				”Resolved that in accordance with the provisions of
+				the Companies Act, 2013 (Act) read with rule frame thereunder, as
+				may be amended from time-to-time and memorandum and articles of
+				association of the company, and subject to all other applicable
+				laws, the board hereby approves assignment of all the receivables
+				from domestic<page no="744"></page>group companies to move the company had extended into
+				corporate deposits from time-to-time and simultaneous assignment
+				of related payables to Essar Oil Ltd. and the execution of the deed
+				of assignment/assignment agreement proposed to be entered into by
+				the -company with the relevant group companies.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>52.</Bold> We find that in the resolution there is no
+			reference of any loss incurred on transfer of the asset, valuation
+			of inter corporate deposits at fair market value, to who these assets
+			are to be sold, which assets are to be sold to which entity, and
+			whether the draft agreement has been perused by the board before
+			entering into. Further it is apparent that the agreement of transfer
+			of receivable entered by the assessee with Ibrox Aviation and -Terminals
+			P. Ltd., produced before us is an unsigned document. Therefore, the
+			production of this board resolution which has not discussed any rational
+			of selling of inter corporate deposits given at substantial discount, does
+			not help the case of the assessee.
+		</Para>
+		<Para>
+			<Bold>53.</Bold> Though the directors report refers to (page
+			No. 15 of annual report) where there is a reply to the qualification
+			in the auditor’s report it is -mentioned that :
+		</Para>
+		<Quote>
+			<Para2>
+				”Further, as reported in the earlier year, controlling
+				stake being non-public shareholding in the company was to be acquired
+				by Essar Oil Ltd. (EOL) as a condition precedent to the share purchase -agreements
+				(SPA) executed on October 15, 2016 by the majority stakeholders
+				of EOL to sell their shareholding to Petrol Complex Pte Ltd. and
+				Kesani Enterprises Co. Ltd. As a result, the company will no longer
+				remain a part of the Essar group and accordingly the company intends
+				to settle all its assets and liabilities and realise the dues from related
+				parties and other entities as envisaged in the transaction -documents
+				exist to pursuant to the SPAs.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>54.</Bold> However, when the Bench asked for these documents
+			because that is the offshoot of the transaction by which a sum of
+			Rs. 251 crores have been booked in the profit and loss account as
+			an exceptional item, it was stated that such agreement is not accessible
+			by the assessee and therefore not in a possession of the assessee
+			and hence not produced.
+		</Para>
+		<Para>
+			<Bold>55.</Bold> We note that when the assessee mentions the
+			same in its directors’ report, notes on accounts, etc., when the
+			going concern itself hinges on that agreement, how the assessee
+			is not having any access to that document. The non-production of
+			such document goes against the assessee because for proving the
+			genuineness of the transaction, onus lies on the assessee. Merely
+			relying on the press notes and newspapers items without<page no="745"></page>looking
+			at the agreement to which the assessee is privy as it mentions its impact
+			on its accounts, etc., does not held the case of the assessee.
+		</Para>
+		<Para>
+			<Bold>56.</Bold> When the assessee has not produced such agreement
+			which is called for by the Bench, auditors of the company have qualified
+			the report on this issue itself (write off exceptional item of Rs.
+			177.5 crores), going concern of the assessee itself depends on such
+			agreement, and fact mentioned above, we do not find any reason to
+			deviate from the orders of the learned lower authorities.
+		</Para>
+		<Para>
+			<Bold>57.</Bold> Regarding the claim of the assessee that the assessee
+			should be allowed the deduction as bad debts written off under section
+			36(1)(vii) of the Act, we do not find that there is a write off
+			of any irrecoverable amount in this case. The assessee has incurred
+			loss on sale/transfer of certain -payables and receivables. Therefore,
+			the loss cannot be claimed as bad debt. All the arguments of the
+			assessee that the assessee has fulfilled the provisions of section
+			36(2) of the Act as it has taken into account while computing the
+			profit for earlier years by including the interest income as income
+			are not relevant. Therefore, the learned lower authorities have -correctly
+			held that the assessee is not entitled to claim the deduction of
+			bad debt written off in the books of account under section 36(1)(vii)
+			of the Act as there is no write off of bad debt.
+		</Para>
+		<Para>
+			<Bold>58.</Bold> Coming to the alternative claim of the assessee
+			of the above sum as trading loss, the learned Assessing Officer
+			has categorically held in paragraph No. 4.6 of the assessment order
+			that such loss was not incidental to the business and nor was on
+			account of revenue it was a future anticipated loss and therefore
+			it was disallowed under section 28(i) of the Act. The learned Commissioner
+			of Income-tax (Appeals) has confirmed the finding of the learned
+			Assessing Officer, we find that the assessee has sold its -payable
+			and receivable. On careful reading of the balance-sheet of the assessee-company,
+			these are shown as loans and advances. Further the amount of loss
+			incurred is also shown as an exceptional item and further in the
+			cash flow statement it is shown from the cash flow from investing activities
+			and not from operating activities. Therefore, it is apparent that
+			it is not the business of the assessee to make investment in inter
+			corporate deposits. Therefore, the loss of Rs. 177.50 crores are
+			not allowable as a business loss.
+		</Para>
+		<Para>
+			<Bold>59.</Bold> The argument of the assessee is that it has
+			offered the interest income as business income and therefore this
+			investment should also be considered as business activity of the
+			assessee. We do not find any force in this argument for the simple
+			reason that the investments held by the assessee as investment activities.
+			Further the memorandum of association<page no="746"></page>of the company furnished before
+			us as additional evidence shows that the main object of the assessee-company
+			is of shipping and transportation. The serial No. 14 under the head
+			object incidental or ancillary to the attainment of the main object
+			where lending is mentioned does not help the case of the assessee
+			because it is not the business activity of the assessee. It only supports
+			the main object of the assessee. Thus, the loss incurred by the assessee
+			is on capital account and not on revenue account and it is not a business
+			loss which can be granted as deduction to the assessee.
+		</Para>
+		<Para>
+			<Bold>60.</Bold> Therefore, we do not find any infirmity in
+			the order of the learned Assessing Officer in denying the deduction
+			of the loss of Rs. 177.5 crores holding that the transaction is
+			sham transaction to book fictitious loss in the books of account,
+			not allowable as deduction as a bad debt and as a business loss
+			which is also confirmed by the learned Commissioner of Income-tax
+			(Appeals).
+		</Para>
+		<Para>
+			<Bold>61.</Bold> Accordingly ground No. 1 of the appeal of
+			the assessee is dismissed.
+		</Para>
+		<Para>
+			<Bold>62.</Bold> Ground No. 2 of the appeal is with respect
+			to the disallowance of interest expenses claimed of Rs. 1,58,12,00,000.
+			The fact shows that during the year under consideration the assessee
+			has incurred interest expenses to the tune of Rs. 1,009.57 crores
+			and has received Rs. 142 crores as interest income. The assessee
+			has received inter corporate deposit and security deposits from
+			related parties on which interest expenses have been incurred of
+			Rs. 395.04 crores which has been debited as interest cost to related
+			entities of Rs. 253.50 crores are on account of interest payment
+			of intra corporate deposits taken from Essar Oil Ltd. and Rs. 141.50
+			crores on account of security deposit given by Essar Oil Ltd. The
+			learned Assessing Officer noted that the interest income and expenses
+			on inter corporate deposit is considered then the assessee has paid
+			interest on inter corporate deposit of Rs. 253.50 crores and received
+			an interest of Rs. 95.38 crores. These inter corporate deposits
+			are taken from group entities and advances are also given to the
+			group entities. The assessee was questioned by the learned Assessing
+			Officer which was replied by the assessee on December 17, 2019 stating
+			that the inter corporate deposits have been advanced -during the
+			business however no interest has been charged on certain inter corporate
+			deposits during the year. The assessee relied on the decision of the
+			honourable Supreme Court in case of <Reference>
+				<CRTo>
+					<Title>Hero Cycle</Title>
+				</CRTo>
+			</Reference> stating
+			that there is a commercial expediency for advancing the inter corporate
+			deposits. The learned Assessing Officer noted that these inter corporate
+			deposits are from and to the group entry entities and no business
+			expediency has been established by the assessee that warrants allowability
+			of claim of excess interest expenditure on such inter corporate
+			deposits more so as a business<page no="747"></page>expenditure. He relied upon the decision
+			of the honourable Madras High Court <Reference>
+				<CRTo>
+					<Title>
+						Mir
+						Mohd. Ali v. CIT
+					</Title>
+				</CRTo>
+			</Reference><Footnote>7</Footnote>, wherein
+			it is held that it is for the assessee to prove that each of the
+			loans on which he paid the interest was utilised for the purposes
+			of his business. This decision has been affirmed by the -honourable
+			High Court in 52 ITR 165. Therefore, the interest income on inter
+			corporate deposit was considered by the Assessing Officer under
+			the head “Income from other sources” instead of business income
+			for statistical purposes and further the excess claim of interest
+			amounting to Rs. 158.12 crores (being Rs. 253.30 crores minus Rs.
+			95.38 crores) were disallowed. Accordingly, the disallowance of
+			Rs. 1,58,12,00,000 was made by the learned Assessing Officer.
+		</Para>
+		<Para>
+			<Bold>63.</Bold> The assessee challenged the same before the
+			learned Commissioner of Income-tax (Appeals), wherein the learned
+			Commissioner of Income-tax (Appeals) has confirmed the addition
+			for the reason that when the assessee has raised the business loans
+			for the business purposes on which interest liability is incurred
+			for payment and on the other hand the funds were advanced to sister
+			concern for non-business purposes on interest-free or on average
+			interest basis, then the interest payable by the assessee to the financial
+			institutions cannot be held to be used funds for business purposes and
+			no deduction accordingly can be permitted under section 36(1)(iii)
+			of the Act. The learned Commissioner of Income-tax (Appeals) has
+			also held that the assessee has casually claimed that the said funds
+			are used for the business purpose but has not established by the
+			appellant during the assessment proceedings or before the appellate
+			proceedings. He further held that the contention of the assessee
+			that the interest during the year is lower due to the waiver of
+			interest from two financially stressed entities is contradicting
+			the fact that inter corporate deposits were granted with a view
+			to earn interest income and margin in the entire process. Before
+			the learned Commissioner of Income-tax (Appeals), no details were
+			submitted to counter the clear-cut findings of the learned Assessing
+			Officer that there was absence of necessary evidence to show that
+			the amount borrowed was used for the purpose of the business despite
+			adverse comments by the Assessing Officer. It was further held that
+			the assessee has not submitted any details in respect of loans availed of and
+			loans issued and thus failed to establish the genuineness of the
+			transaction. In absence of any new credible evidence placed before
+			him, he held that the onus of proving that the borrowed money has
+			not been utilised for no business purposes was on the assessee which
+			has not been discharged. On the issue of commercial expediency,
+			it was stated that the assessee has failed to show any commercial<page no="748"></page>expediency
+			and therefore the view of the learned Assessing Officer is -correct.
+			Accordingly, he confirmed the disallowance.
+		</Para>
+		<Para>
+			<Bold>64.</Bold> The learned authorised representative specifically
+			referred to the assessment order where the disallowances made. He
+			referred to page No. 277 of the paper book which is a summary of
+			inter corporate deposits for the financial year 2016-17. He further
+			stated that there are two parties, namely, Essar Steel India Ltd.
+			and Essar Ltd. to whom the inter corporate deposit is given but
+			no interest is charged. It was stated that looking to the position
+			of the debtor-assessee was not able to charge any interest thereon. He
+			referred to page Nos. 191-192 of the paper book wherein as per -paragraph
+			No. (B) the interest on loans and advances to group companies was
+			explained. It was stated that company has given an inter corporate deposit
+			to group concern during the business. The source of this inter -corporate
+			deposits was mixed, i. e., out of internal accruals and out of the inter
+			corporate deposits received. As may be seen from the financial statement,
+			it has in all cases charged interest on inter corporate deposits granted.
+			However, the interest has also been charged at rates higher than the
+			rates at which the source of funds has been borrowed. During the
+			year, the assessee would not charge any interest on loan given to
+			Essar Steel India Ltd. and Essar Dredging Ltd., because of their
+			financial and operational challenges and the strong likelihood of
+			not receiving those interest. The management of the company in larger
+			interest of recovery of inter -corporate deposits decided not to
+			charge the interest for this year as is -evident from the financial
+			statement. Then he relied extensively on the submission made by
+			the assessee at page No. 1934 of paper book. The learned authorised
+			representative further referred to the paper book page No. 307 (page
+			Nos. 314-315).
+		</Para>
+		<Para>
+			<Bold>65.</Bold> The learned authorised representative vehemently
+			submitted that identical issue arose in case of the assessee for
+			the assessment year in <Reference>
+				<CRTo>
+					<Title>
+						Nayara Energy Ltd. v. Asst.
+						CIT
+					</Title>
+					<Citothers>I. T. A. No. 777/Mum/2022</Citothers>
+				</CRTo>
+			</Reference> for
+			assessment year 2016-17, wherein the co-ordinate Bench vide order
+			dated October 10, 2022 has dealt with the same issue and the claim
+			of the assessee was allowed.
+		</Para>
+		<Para>
+			<Bold>66.</Bold> The learned authorised representative further
+			referred to <Reference>
+				<CRTo>
+					<Title>
+						Nayara Energy Ltd. v. Asst.
+						CIT
+					</Title>
+				</CRTo>
+			</Reference>, M. A. No. 332/Mum/2022 in I. T.
+			A. No. 777/Mum/2022 for assessment year 2016-17 decided on February
+			6, 2023, wherein as per paragraph No. 2 the issue of inter corporate
+			deposits and interest disallowance was raised and he further referred
+			to paragraph -number eight of that decision to show that now the
+			issue is squarely decided in favour of the assessee. He submits
+			that though in the assessment<page no="749"></page>year 2016-17 the issue on different
+			context but the interest was granted as deduction. Therefore, the
+			issue is covered in favour of the assessee.
+		</Para>
+		<Para>
+			<Bold>67.</Bold> The learned authorised representative specifically
+			referred that it is not the case of the learned Assessing Officer
+			that the assessee should have earned interest on ICDs of Essar Oil
+			Ltd. and Essar Dredging Ltd. In earlier years, those inter corporate
+			deposits were carrying on interest. He referred to the decision
+			of the honourable Supreme Court <Reference>
+				<CRTo>
+					<Title>Veecumsees v. CIT</Title>
+				</CRTo>
+			</Reference>
+			<Footnote>8</Footnote>, wherein paragraph number seven
+			in stating that interest year has been -disallowed because of the
+			financial position of the debtor but the amount was borrowed for
+			the purposes of the business.
+		</Para>
+		<Para>
+			<Bold>68.</Bold> The learned departmental representative vehemently
+			supported the order of the learned lower authorities.
+		</Para>
+		<Para>
+			<Bold>69.</Bold> We have carefully considered the rival contention
+			and perused the orders of the lower authorities. The issue is of
+			about the disallowance of the interest expenditure on ICD of Rs.
+			1,58,12,00,000. The fact shows that the assessee has incurred interest
+			expenditure to the tune of Rs. 1,009.57 crores and has received
+			interest of Rs. 142 crores as interest income. On ICD with related
+			parties interest expenditure of Rs. 395.04 crores were paid, and
+			interest received was of Rs. 253.50 crores from Essar Oil and Rs. 141.54
+			crores of security deposit against which the assessee has received
+			interest of only Rs. 95.38 crores. It is also a fact admitted that though
+			in the corporate deposits have been advanced in the course of the business
+			however no interest has been charged on certain deposits during the
+			year the reason being advanced by the assessee is of “commercial
+			expediency”. During the course of appellate proceedings, the learned
+			Commissioner of Income-tax (Appeals) has categorically noted that
+			whether the funds borrowed was used for the business purposes, no
+			details were -furnished by the assessee. Page No. 277 of the paper
+			book filed by the assessee clearly shows that as on the end of March
+			31, 2016 total -outstanding inter corporate deposits were Rs. 2,57,177
+			lakhs. The deposits with Essar Steel Ltd. at the beginning of the
+			year was Rs. 30,552.62 lakhs and from Essar Dredging Ltd. of Rs.
+			1,23,502.78 lakhs. On both these accounts, the assessee has not
+			charged any interest. These ICD is assigned on the last day of the
+			financial year and therefore are not outstanding at the end of the
+			year. The only reason advanced by the assessee is that the financial
+			condition of the debtor was not good and therefore the assessee did
+			not charge any interest on these deposits. Except submissions made before
+			the lower authorities, no evidence of commercial expediency was submitted
+			before us. However, the decision of the co-ordinate Bench in<page no="750"></page>
+			<Reference>
+				<CRTo>
+					<Title>Nayara Energy Ltd. v. Asst. CIT</Title>
+					<Citothers>I. T. A. No. 777/Mum/2022</Citothers>
+				</CRTo>
+			</Reference> for
+			the assessment year 2016-17, dated October 10, 2022 was placed before
+			us and stated that the decision also deals with the issue para No.
+			2 specifically mentioned and subsequently paragraph Nos. 12-13 was
+			mentioned. -Subsequently the <Reference>
+				<CRTo>
+					<Title>
+						Nayara Energy
+						Ltd. v. Asst. CIT
+					</Title>
+				</CRTo>
+			</Reference>, M. A. No. 332/Mum/2022
+			in I. T. A. No. 777/Mum/2022 for assessment year 2016-17 decided
+			on February 6, 2023 was discussed. The miscellaneous application
+			was only with respect to the restoration of the appeal to the Assessing
+			Officer on that issue in I. T. A. No. which was then decided by
+			the co-ordinate Bench and deleted the interest disallowance. However,
+			the learned authorised representative himself submitted that the
+			whole issue is on different -context. It is not the case that the assessee
+			has huge non-interest bearing surplus/own funds then the amount
+			advanced to the sister concern on which no interest is charged.
+			As on March 31, 2017 the total equity of the assessee is only Rs.
+			67.08 crores. We have also carefully looked that the page No. 192
+			of the paper book wherein a letter dated December 17, 2019 is placed
+			before the learned Assessing Officer. On careful perusal of the above
+			letter, it was simply statement of judicial principles without any -substantive
+			factual details filed before the Assessing Officer or the lower authorities.
+			It is also to be seen that the during this year the interest charged
+			by the assessee is Rs. 9.472.53 crores whereas the interest repaid
+			is also a negative figure (page No. 277 of the paper book). It is
+			also to be seen that the outstanding inter corporate deposit of
+			Essar Steel India Ltd. was Rs. 22,478 lakhs on which outstanding
+			interest was Rs. 80.74 lakhs and in the case of another company
+			the outstanding inter corporate deposit was Rs. 1,19,335 lakhs and
+			the outstanding interest was of Rs. 4,207 lakhs. Thus, the assessee
+			has not used borrowed funds for the purposes of the business but
+			has advanced the same to the sister concern without charging any
+			interest. In view of this we do not find any infirmity in the order
+			of the learned lower authorities in disallowing interest expenditure
+			of Rs. 158.12 crores under section 36(1)(iii) of the Act. In the
+			result ground Nos. 3-5 of the appeal are dismissed.
+		</Para>
+		<Para>
+			<Bold>70.</Bold> Ground Nos. 6-7 is with respect to the disallowance
+			of interest expenses incurred for the loan used for investment in
+			Ennegaon Ltd., -Mauritius.
+		</Para>
+		<Para>
+			<Bold>71.</Bold> The brief facts of the case shows that during
+			the year the assessee has made investment of Rs. 3,033.21 crores
+			in the above company. Note No. 56 to the annual account also refers
+			of the above investment. The assessee was asked to produce various
+			details with respect to the above company. The assessee submitted
+			that investment of Rs. 3,033.21 crores<page no="751"></page>were made in three trenches
+			on June 29, 2019, September 29, 2016 and December 29, 2016. The
+			allotment of the shares took place on September 30, 2016 and February
+			23, 2017. This subsidiary company was incorporated into 2015 and
+			did not have any business activities before such investment was
+			made. It was the claim of the assessee that the above investment
+			was meant to carry out trading activity, however, no such activities
+			could be carried out because of the prevalent market conditions.
+			In August 2017, these shares of the subsidiary company were brought
+			back from the assessee. Therefore, in this entire process of less
+			than one year the assessee incurred a loss of Rs. 127.93 crores
+			on the transaction. The Assessing Officer further noted that over
+			and above the above loss, the assessee has also debited finance
+			cost of Rs. 171.57 crores in its books of account as -specific finance
+			cost incurred towards investment in a subsidiary. Before the Assessing
+			Officer no documents in relation to the above proposed plan of acquisition
+			of the subsidiary company for the purpose of trading was produced
+			and further the record suggested that no business happened in that
+			company. Therefore, the learned Assessing Officer reached at a -conclusion
+			that the assessee has provided that finance, fund movement shows
+			that once the funds landed in its books, there is nothing brought
+			on record to prove that this investment was in relation to the business. Accordingly,
+			he disallowed the sum of Rs. 171,57,00,000 of the interest expenditure.
+		</Para>
+		<Para>
+			<Bold>72.</Bold> When the issue was challenged before the
+			learned Commissioner of Income-tax (Appeals) the assessee submitted
+			an explanation for commercial expediency along with the relevant
+			judicial precedents for allowability of expenses in the hands of
+			the holding company. The assessee submitted that though the intended
+			activity of trading did not fructify however the subsidiary had
+			paid amount equivalent to the equity investment to a potential supplier
+			of motor spirit during the year. The amounts transferred were unsecured
+			and carried interest of 5 per cent. per annum up to the date of
+			delivery of supply. The products were initially scheduled to be delivered
+			by the supplier to the subsidiary in the month of December 2016. The
+			contract delivery date was scheduled for deliveries to take place
+			in September 2017 as per contracts entered. Subsequently the transaction
+			did not materialise and hence the subsidiary decided to buy-back
+			the shares in the financial year 2017-18. Therefore, it was the
+			claim that the amount of interest paid by the assessee on the investment
+			made in a subsidiary -company should be allowed as a deduction as
+			there was a business rational for making investment into the subsidiary
+			company. It was also submitted that the sanction letter from ICICI
+			Bank and Axis Bank clearly shows that<page no="752"></page>the facilities were granted
+			for making overseas investment after the due diligence by those
+			bankers and end-user certificates were obtained from the auditors.
+			The learned Commissioner of Income-tax (Appeals) categorically noted
+			that subsidiary was not carrying out any business, no documents
+			in relation to the proposed plan has been furnished before the Assessing
+			Officer, no business actually happened in that company and in the
+			process the company incurred a loss of Rs. 171.57 crores on account
+			of interest and Rs. 127.93 crores on loss on sale of shares. Except
+			citing the judicial precedents, no substantive information on facts
+			were produced before the Assessing Officer. The assessee failed
+			to provide the financial statements of the subsidiary, fund movement
+			in the books of the subsidiary, etc. In view of absence of any details
+			from the side of the assessee, the learned Commissioner of Income-tax
+			(Appeals) held that there is nothing brought on record to clearly
+			prove that this investment was in relation to the business of the
+			assessee. Accordingly, he confirmed the disallowance.
+		</Para>
+		<Para>
+			<Bold>73.</Bold> Aggrieved, the assessee is in appeal before
+			us, the learned authorised representative submitted that memorandum
+			of association of the assessee-company, board note relating to investment
+			in the subsidiary company, audited financial statement of the subsidiary
+			company are produced as additional evidence at page Nos. 629 to
+			914 of the paper book. He referred to page No. 869 of the paper
+			book to show that item No. 10 of the agenda was with respect to
+			the new financing facility of US$ 450 million and use of proceeds
+			for equity infusion into overseas subsidiaries. He submitted that the
+			subsidiary is a global business licence-1 company incorporated in -Mauritius
+			for the purpose of carrying out, trading related business. The joint-venture
+			company will have an equity contributed by the assessee and another
+			company in the ratio of 65 : 35. He further referred to page No.
+			885 onwards which is the annual account of the subsidiary company
+			for the year-ended on March 31, 2017. The assessee further relied
+			upon the -decision of the honourable Supreme Court in the case of
+			<Reference>
+				<CRTo>
+					<Title>S. A. Builders Ltd. v. CIT (Appeals)</Title>
+				</CRTo>
+			</Reference>
+			<Footnote>9</Footnote> and submitted that if the
+			advance to the subsidiary is for the reasons of business expediency,
+			no disallowance can be made. The learned authorised representative
+			further referred to page No. 287 of the paper book wherein a show-cause
+			notice dated December 18, 2019 is issued with respect to the investment
+			made in the subsidiary company. He further referred to page No.
+			195 of the paper book wherein a letter dated December 18, 2019 was
+			placed and the details of investment in subsidiary company was provided.
+			He further referred to page No. 188 of the paper book wherein the
+			letter dated December 16, 2019 was placed and it was<page no="753"></page>submitted that
+			for the purpose of making the above investment the -company has
+			obtained financial facilities from Axis Bank and ICICI Bank.
+		</Para>
+		<Para>
+			<Bold>74.</Bold> The learned Departmental representative submitted
+			that no details were submitted by the assessee before the learned
+			Assessing Officer. Therefore, the addition has rightly been confirmed
+			by disallowing the interest expenditure. He further submitted that
+			if the additional evidence were admitted, the learned Assessing
+			Officer must get an opportunity to verify the same. He otherwise
+			supported the orders of the learned lower authorities.
+		</Para>
+		<Para>
+			<Bold>75.</Bold> We have carefully considered the rival contention
+			and perused the orders of the learned lower authorities. The brief
+			facts of the case shows that assessee has made investment in a subsidiary
+			company of Rs. 3,033.21 crores in Ennegaon Ltd., Mauritius consisting
+			of 450 lakhs equity shares of 1 US dollar each. This fact is evident
+			at note No. 16 (investments) in the annual accounts wherein two
+			footnotes are also given. One of the footnotes also referred to
+			another note at note No. 56 which has already been referred to by
+			us in the earlier grounds. As no other details were submitted by
+			the assessee except relying on certain judicial precedents and raising plea
+			of commercial expediency, the disallowance was confirmed by the lower
+			authorities.
+		</Para>
+		<Para>
+			<Bold>76.</Bold> Now before us the assessee has submitted
+			annual accounts of the subsidiary company as well as the borrowings
+			made from bankers for -making such investment. These are the additional
+			evidence along with the note of the board of directors filed by
+			the assessee before us which we have admitted. Therefore, if the
+			additional evidence is admitted, it needs to be examined by the
+			learned Assessing Officer first. In view of this we restore this
+			ground of appeal back to the file of the learned Assessing Officer
+			with a direction to the assessee to substantiate before the learned
+			Assessing Officer that the interest expenditure incurred by the
+			assessee on investment made in a subsidiary company is allowable
+			as deduction. Merely -relying on the judicial precedent bereft of
+			the facts of the case and unsubstantiated shelter business expediency
+			without factually providing business expediency, will not help the
+			case of the assessee. The learned Assessing Officer also needs to
+			examine note No. 7 of accounts of subsidiary -company and whether
+			the assessee has any interest in that transaction or not. The learned
+			Assessing Officer may also examine the sanction letters of the banks
+			on this issues, mere board notes will not suffice the facts of business
+			expediency. The learned Assessing Officer may examine the details submitted
+			by the assessee and after enquiry on facts, decide the issue afresh
+			about the allowability of interest expenditure of Rs. 1,71,57,00,000.
+			It<page no="754"></page>would be the duty of the assessee and the onus to explain before
+			the learned Assessing Officer that such interest expenditure is
+			deductible. The learned Assessing Officer may also grant an opportunity
+			of hearing, if requested, before deciding the issue afresh. In view
+			of this ground Nos. 6-7 of the appeal is allowed with above direction.
+		</Para>
+		<Para>
+			<Bold>77.</Bold> Ground No. 8 i with respect to non-granting
+			of the tax deduction at source credit of Rs. 229 lakhs. Both the
+			parties agreed that this is an issue of credit of tax deduction
+			at source to the assessee which may be verified by the learned Assessing
+			Officer. In view of this, we direct the assessee to -substantiate
+			its claim of the above credit before the learned Assessing Officer
+			who may decide the issue after verification on its own merits. Accordingly
+			ground No. 8 of the appeal of the assessee is allowed with above
+			direction.
+		</Para>
+		<Para>
+			<Bold>78.</Bold> Ground No. 9 of the appeal is with respect
+			to the claim of the assessee of absence of an approach and opportunity
+			of personal hearing. Before us, this ground of appeal was never
+			argued and no evidence were placed before us, therefore same is
+			dismissed.
+		</Para>
+		<Para>
+			<Bold>79.</Bold> In the result appeal of the assessee is partly
+			allowed for statistical purposes.
+		</Para>
+		<Para>Order pronounced in the open court on September 11, 2024.</Para>
+	</JudgmentGroup>
+	<Footnotes>
+		<Link>1</Link>
+		<LinkCont>
+			2024
+			SCC OnLine ITAT 1806.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>2</Link>
+		<LinkCont>
+			[2007] 288 ITR 1 (SC) ; (2007) 1 SCC 781 ; 2006 SCC OnLine
+			SC 1411.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>3</Link>
+		<LinkCont>
+			[1979] 119 ITR 380
+			(Bom) ; 1976 SCC OnLine Bom 197.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>4</Link>
+		<LinkCont>[2015] 63 taxmann.com 283 (Bom).</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>5</Link>
+		<LinkCont>
+			[2012] 342
+			ITR 285 (Bom) ; 2012 SCC OnLine Bom 296.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>6</Link>
+		<LinkCont>
+			[2021]
+			439 ITR 399 (Bom) ; 2021 SCC OnLine Bom 14059.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>7</Link>
+		<LinkCont>
+			[1960]
+			38 ITR 413 (Mad) ; 1959 SCC OnLine Mad 229.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>8</Link>
+		<LinkCont>
+			[1996] 220 ITR 185 (SC) ; (1996) 9 SCC 25 ; 1996
+			SCC OnLine SC 140.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>9</Link>
+		<LinkCont>
+			[2007] 288 ITR 1 (SC) ; (2007) 1 SCC 781 ; 2006
+			SCC OnLine SC 1411.
+		</LinkCont>
+	</Footnotes>
+</TCase>

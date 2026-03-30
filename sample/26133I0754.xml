@@ -1,0 +1,537 @@
+<TCase ID="133 ITR (Trib) 0754" Shtitle="Ashita Garg v. JAO (Chand)" Appendix="N">
+	<CaseId>
+		<Pagenum>
+			<ShCourtName>(Chandigarh)</ShCourtName>
+		</Pagenum>
+	</CaseId>
+	<court>
+		<CourtName>Income-tax Appellate Tribunal</CourtName>
+		<Bench Special="n">
+			Chandigarh “SMC” Bench
+		</Bench>
+	</court>
+	<CauseTitleGroup>
+		<CauseTitle>
+			<ApellantGroup>
+				<Apellant Type="Apellant">
+					Ashita Garg<Footnote>1</Footnote>
+				</Apellant>
+			</ApellantGroup>
+			<RespondentGroup>
+				<Respondent>Jurisdictional Assessing Officer</Respondent>
+			</RespondentGroup>
+		</CauseTitle>
+	</CauseTitleGroup>
+	<JudGroup>
+		<TJudge Position1="Accountant Member" Position2="None">
+			Vikram
+			Singh Yadav
+		</TJudge>
+	</JudGroup>
+	<Date Month="August" Date="18" Year="2025"/>
+	<SRGroup>
+		<Sr>
+			<ActAbbr>ITA 1961,</ActAbbr>
+			<SecNum> ss 144B</SecNum>
+			<SecNum>148</SecNum>
+			<SecNum>148A</SecNum>
+			<SecNum>151A</SecNum>
+		</Sr>
+	</SRGroup>
+	<AssYearGroup>
+		<AssYear>2019-20</AssYear>
+	</AssYearGroup>
+	<HFGroup>
+		<Hf Favourof="Assessee"/>
+	</HFGroup>
+	<CWGroup>
+		<CW>Income-tax</CW>
+		<CW>Reassessment</CW>
+		<CW>Notice</CW>
+		<CW>Jurisdiction</CW>
+		<CW>Notification laying down proceedings to be undertaken by faceless assessment unit</CW>
+		<CW>
+			Show-cause notice issued by jurisdictional Assessing Officer
+			instead of faceless assessment unit
+		</CW>
+		<CW>
+			Held,<page no="755"></page>breach of binding
+			notification
+		</CW>
+		<CW>
+			Notice under section <SecRef ID="ITA-1961-148">148</SecRef> to
+			be issued by faceless assessment unit
+		</CW>
+		<CW>
+			Reassessment invalid
+			and quashed
+		</CW>
+		<CW>
+			<ActName>Income-tax Act, 1961</ActName>, ss.
+			<SecRef ID="ITA-1961-144B">144B</SecRef>,
+			<SecRef ID="ITA-1961-148">148</SecRef>, <SecRef ID="ITA-1961-148A">148A</SecRef>,
+			<SecRef ID="ITA-1961-151A">151A</SecRef>
+		</CW>
+		<CW>
+			Central Board
+			of Direct Taxes Notification No. 18 of 2022/F. No. 370142/16/2022-TPL
+			(Part 1), dated 29-3-2022<Footnote>2</Footnote>.
+		</CW>
+	</CWGroup>
+	<?Fm Condstart FM8_SYSTEM_HIDEELEMENT?>
+	<CSGroup hidden="y">
+		<CS>Income-tax</CS>
+		<CS>Reassessment</CS>
+		<CS>Notice</CS>
+		<CS>Jurisdiction</CS>
+	</CSGroup>
+	<?Fm Condend FM8_SYSTEM_HIDEELEMENT?>
+	<HeadNote>
+		<Para>
+			For the assessment year 2019-20, a show-cause notice
+			was issued under section <SecRef ID="ITA-1961-148A-b">148A(b)</SecRef> of
+			the <ActName>Income-tax Act, 1961</ActName> by the jurisdictional
+			Assessing Officer on March 2, 2023 calling upon the assessee to
+			show cause why notice under section <SecRef ID="ITA-1961-148">148</SecRef> should
+			not be issued on the basis of information that -income chargeable
+			to tax had escaped assessment. After the assessee’s submission,
+			order under section <SecRef ID="ITA-1961-148A-d">148A(d)</SecRef> was
+			passed on March 30, 2023 and on the same date, notice under section
+			<SecRef ID="ITA-1961-148">148</SecRef> was issued by the jurisdictional
+			Assessing Officer. The Commissioner (Appeals) affirmed the reassessment.
+			On appeal to the -Tribunal raising an additional ground that the
+			reassessment proceedings were invalid having been undertaken by
+			the jurisdictional Assessing Officer and not by the faceless assessment
+			unit, as required by notification dated March 29, 20221 :
+		</Para>
+		<Para>
+			<EmphasisR>Held</EmphasisR>, allowing the appeal, that the
+			notice under section <SecRef ID="ITA-1961-148">148</SecRef> was
+			issued by the jurisdictional Assessing Officer and not by the faceless
+			assessment unit, almost a year after the issuance of the notification
+			by the Ministry of Finance, Government of India on March 29, 2022
+			requiring issuance of notice and conduct of assessment proceedings
+			by the faceless assessment unit. There was thus a clear breach of
+			the binding notification issued under section
+			<SecRef ID="ITA-1961-144B">144B</SecRef> of the Act requiring
+			issuance of notices and conduct of proceedings through the faceless
+			assessment unit. Thus, the notice issued was without jurisdiction and
+			bad in law. <EmphasisR>(para 10)</EmphasisR>
+		</Para>
+		<JDNotice>
+			<JDN>
+				<Title>Dy. CIT v. Aman Batra</Title> <Citothers>
+					2025
+					SCC OnLine ITAT 6348
+				</Citothers>, <Title>
+					Bagga Singh v. Dy. CIT (International
+					Taxation)
+				</Title> <Citothers>2025 SCC OnLine ITAT 6284</Citothers>,
+				<Title>Jatinder Singh Bhangu v. Union of India</Title>
+				<Citation Citation="466 ITR 474" year="2024" Court="P&amp;H" fbsb="0"/> ; <Citothers>
+					2024 SCC OnLine P&amp;H
+					9337
+				</Citothers> and <Title>Jasjit Singh v. Union of India</Title>
+				<Citation Citation="467 ITR 52" year="2024" Court="P&amp;H" fbsb="0"/> ;
+				<Citothers>2024 SCC OnLine P&amp;H 9677</Citothers> <JDType>followed</JDType>.
+			</JDN>
+		</JDNotice>
+		<Para>
+			<Italics>Chronological list of cases cited 	on page(s)</Italics>
+		</Para>
+		<Referred>
+			<CRT>
+				<Citothers>2025 SCC OnLine ITAT 6348</Citothers>,
+				<Title>CIT (Dy.) v. Aman Batra</Title> 	757f, 759g
+			</CRT>
+			<CRT>
+				<Citothers>2025 SCC OnLine ITAT 6284</Citothers>, <Title>
+					Bagga
+					Singh v. Dy. CIT
+					(International Taxation)
+				</Title> 		759c, g
+			</CRT>
+			<CRT>
+				<Citation Citation="467 ITR 52" year="2024" Court="P&amp;H" fbsb="0"/> ;
+				<Citothers>2024 SCC OnLine P&amp;H 9677</Citothers>, <Title>
+					Jasjit
+					Singh
+					v. Union of India
+				</Title> 		758e-f
+			</CRT>
+			<page no="756"></page>
+			<CRT>
+				<Citation Citation="466 ITR 474" year="2024" Court="P&amp;H" fbsb="0"/> ; <Citothers>
+					2024 SCC OnLine P&amp;H
+					9337
+				</Citothers>, <Title>
+					Jatinder
+					Singh Bhangu v. Union of India
+				</Title> 		756f, 758d-e, f
+			</CRT>
+			<CRT>
+				<Citation Citation="229 ITR 383" year="1998" Court="SC" fbsb="0"/> ;
+				<Citation Citation="132 STC 566" year="2003" Court="SC" fbsb="0"/> ;
+				<Citothers>
+					(1997) 7
+					SCC 489
+				</Citothers> ; <Citothers>1996 SCC OnLine SC 173</Citothers>,
+				<Title>
+					National Thermal Power
+					Co. Ltd. v. CIT
+				</Title> 		756g, 757a
+			</CRT>
+		</Referred>
+		<TaxCaseNo>
+			<Ref>I. T. A. No.</Ref>
+			<Caseno>
+				<Number>539</Number>/Chand/
+				<year>2025</year> (assessment year <AssYear>2019-20</AssYear>).
+			</Caseno>
+		</TaxCaseNo>
+		<CounselGroup>
+			<forApellant>
+				<CounselName>Ms. Pallavi</CounselName> and
+				<CounselName>Sudhir Sehgal</CounselName>, Advocates, for the assessee.
+			</forApellant>
+			<forRespondent>
+				<CounselName>Vivek Vardhan</CounselName>, Additional
+				Commissioner of Income-tax, Senior -Departmental representative,
+				for the Department.
+			</forRespondent>
+		</CounselGroup>
+	</HeadNote>
+	<JudgmentGroup Title="Order">
+		<Para>
+			<TJudge Position1="Accountant Member" Position2="None">
+				Vikram
+				Singh Yadav
+			</TJudge>.—This is an appeal filed by the assessee against
+			the order of the learned Commissioner of Income-tax (Appeals)/National
+			Faceless Appeal Centre, Delhi dated March 18, 2025 pertaining to the assessment
+			year 2019-20.
+		</Para>
+		<Para>
+			<Bold>2.</Bold> At the outset, the learned authorised representative
+			submitted that the assessee has moved a prayer for admission of
+			the following additional ground of appeal :
+		</Para>
+		<Quote>
+			<Para2>
+				“Notwithstanding the original grounds of appeal, the
+				reassessment proceedings initiated under section 148 of the Income-tax
+				Act, 1961 are bad in law and void ab initio, as the notice under
+				section 148 was issued by the jurisdictional Assessing Officer (JAO)
+				instead of the National Faceless Assessment Centre (NFAC), which
+				is in violation of the mandatory procedure prescribed under sections
+				144B and 151A of the Act, vide notification Central Board of Direct
+				Taxes Notification No. 18/2022/F. No. 370142/16/2022-TPL (Part 1) dated
+				March 29, 2022 ([2022] 442 ITR (St.) 198) and as clarified by the
+				hon’ble Punjab and Haryana High Court in the case of <Reference>
+					<CRTo>
+						<Title>Jatinder Singh Bhangu v. Union of India</Title>
+					</CRTo>
+				</Reference>
+				<Footnote>3</Footnote> (W. P. No. 15745 of 2024, dated July 19,
+				2024).”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>3.</Bold> It was submitted that all the facts are borne
+			out from the order of the Assessing Officer and no fresh facts are
+			to be investigated and the additional ground being purely a legal
+			ground, the same may be admitted in light of the decision of the
+			hon’ble Supreme Court in the case of <Reference>
+				<CRTo>
+					<Title>
+						National Thermal
+						Power Co. Ltd. v. CIT
+					</Title>
+				</CRTo>
+			</Reference><Footnote>4</Footnote>.
+		</Para>
+		<Para>
+			<Bold>4.</Bold> The learned Departmental representative has
+			been heard who has not raised any specific objection for admission
+			of the additional ground of appeal.
+		</Para>
+		<page no="757"></page>
+		<Para>
+			<Bold>5.</Bold> The additional ground so sought to be raised
+			being purely legal in nature, the same is hereby admitted for necessary
+			adjudication following the decision of the hon’ble Supreme Court
+			in the case of <Reference>
+				<CRTo>
+					<Title>
+						National Thermal Power Co.
+						Ltd. v. CIT
+					</Title>
+				</CRTo>
+			</Reference><Footnote>5</Footnote>
+		</Para>
+		<Para>
+			<Bold>6.</Bold> In this regard, the learned authorised representative
+			further submitted that basis certain information that the assessee
+			has purchased certain immovable property and has made cash payment
+			of Rs. 40,00,000, a show cause was issued under section 148A(b)
+			of the Act by the Income-tax Officer, Ward-1, Nabha on March 2,
+			2023 as to why notice under section 148 should not be issued on
+			the basis of information that income chargeable to tax has escaped
+			assessment. In response, the assessee filed her submission and thereafter, an order
+			under section 148A(d) was passed on March 30, 2023 and on the same
+			date, i. e., March 30, 2022, notice under section 148 was issued
+			by Income-tax Officer, Ward, Nabha being the jurisdictional Assessing
+			Officer.
+		</Para>
+		<Para>
+			<Bold>7.</Bold> It was submitted that the notice so issued
+			under section 148 was in clear contravention of the mandatory requirement
+			of faceless proceedings stipulated under the Income-tax Act post
+			issuance of notification by the Ministry of Finance, Government
+			of India dated March 29, 2022 under section 144B of the Act. It
+			was submitted that after issuance of the said notification on March
+			29, 2022, the notice under section 148 ought to have been issued
+			by the Faceless Assessment Unit and not by the jurisdictional Assessing
+			Officer. It was accordingly submitted that the notice so issued under
+			section 148 has clearly been issued without jurisdiction. In this regard,
+			our reference was drawn to the decision of co-ordinate Bench in the case
+			of <Reference>
+				<CRTo>
+					<Title>Dy. CIT v. Aman Batra</Title>
+				</CRTo>
+			</Reference>
+			<Footnote>6</Footnote> (I.
+			T. A. No. 1040/Chand/2024 and C. O. No. 41/Chand/2024, dated May
+			13, 2025), wherein the co-ordinate Bench following the decision
+			of hon’ble Punjab and Haryana High Court has held that the notice
+			issued under section 148 is bad in the eyes of law. In this regard,
+			the relevant finding of the co-ordinate Bench read as under :
+		</Para>
+		<Quote>
+			<Para2>
+				“6. We have duly considered the rival contentions
+				and gone through the record carefully. Admittedly, notice under
+				section 148 was issued after the notification issued by the Ministry
+				of Finance, Government of India on March 29, 2022. The notice under
+				section 148 has been issued on March 29, 2023, i. e., almost one
+				year from the notification. Thus, facts of other year are squarely
+				applicable. The<page no="758"></page>issue in dispute is covered by the judgment of the
+				hon’ble jurisdictional High Court which read as under :
+			</Para2>
+			<Para3>
+				‘1. Challenge made through the instant petition is to the
+				notice dated March 1, 2025 (annexure P1) issued to the petitioner
+				by the respondents under section 148 of the Income-tax Act, 1961.
+				The primary ground of challenge raised by the petitioner is that
+				the impugned notice has been issued by the jurisdictional Assessing Officer
+				which could not have been done because in terms of the notification
+				dated March 29, 2022 (annexure P2), issued by the Ministry of Finance, Government
+				of India, the impugned notice could have been issued only by way
+				of faceless assessment.
+			</Para3>
+			<Para3>
+				2. In support of his afore submission, the learned counsel
+				for the petitioner places reliance on the following two judgments
+				of this court :
+			</Para3>
+			<Para4>
+				(i) C. W. P. No. 15745 of 2024, titled <Reference>
+					<CRTo>
+						<Title>
+							Jatinder
+							Singh Bhangu v. Union of India
+						</Title>
+					</CRTo>
+				</Reference><Footnote>7</Footnote>,
+				decided on July 19, 2024 ; and
+			</Para4>
+			<Para4>
+				(ii) C. W. P. No. 21509 of 2023, titled <Reference>
+					<CRTo>
+						<Title>
+							Jasjit
+							Singh v. Union of India
+						</Title>
+					</CRTo>
+				</Reference><Footnote>8</Footnote>,
+				decided on July 29, 2024.
+			</Para4>
+			<Para3>
+				3. The learned counsel for the respondents does not dispute
+				the fact that the case of the petitioner is covered in his favour
+				by the law laid down through the aforesaid two judgments rendered
+				by two -different co-ordinate Benches of this court in <Reference>
+					<CRTo>
+						<Title>Jatinder Singh Bhangu v. Union of India</Title>
+					</CRTo>
+				</Reference>1 and
+				<Reference>
+					<CRTo>
+						<Title>Jasjit Singh v. Union of India</Title>
+					</CRTo>
+				</Reference>2.
+			</Para3>
+			<Para3>
+				4. In the light of the above, in terms of the law laid down
+				in <Reference>
+					<CRTo>
+						<Title>Jatinder Singh Bhangu v. Union of India</Title>
+					</CRTo>
+				</Reference>1 and
+				<Reference>
+					<CRTo>
+						<Title>Jasjit Singh v. Union of India</Title>
+					</CRTo>
+				</Reference>2 the
+				impugned notice dated March 1, 2025 (annexure P1) issued by the jurisdictional
+				Assessing Officer, is hereby quashed with liberty to the respondents
+				to proceed against the petitioner in accordance with law.
+			</Para3>
+			<Para2>5. The petition is allowed in the above terms.’</Para2>
+			<Para2>
+				7. Respectfully following the judgment of the hon’ble High
+				Court, we allow the ground of appeal of cross-objection and hold
+				that notice issued under section 148 of the Income-tax Act in the assessment year
+				2019-20 is bad in the eyes of law. It was without jurisdiction. Accordingly,
+				reassessment order is quashed.
+			</Para2>
+			<page no="759"></page>
+			<Para2>
+				8. Though the Revenue has raised a number of issues on the
+				merits in its appeal, but we have quashed the reassessment order,
+				therefore, all the issues become academic in nature at this stage.
+				We have quashed the assessment order on the strength of number of -judgments
+				rendered by the hon’ble jurisdictional High Court, which is a view
+				unanimously taken by other hon’ble High Courts also. Therefore,
+				we do not deem it necessary to consider other issues on the merits.”
+			</Para2>
+		</Quote>
+		<Para>
+			<Bold>8.</Bold> Further, reference was drawn to another decision
+			of a co-ordinate Bench in the case of <Reference>
+				<CRTo>
+					<Title>
+						Bagga
+						Singh v. Dy. CIT
+					</Title>
+				</CRTo>
+			</Reference><Footnote>9</Footnote>, in I. T. A. No. 2318/Chand/2024,
+			dated May 13, 2025 wherein similar view has been taken by the co-ordinate
+			Chandigarh Benches.
+		</Para>
+		<Para>
+			<Bold>9.</Bold> The learned senior Departmental representative
+			is heard who has fairly submitted that though there are decisions
+			of the hon’ble Punjab and Haryana High Court, however, the Revenue
+			is in appeal before the hon’ble Supreme Court against such decisions
+			rendered by the hon’ble High Court. However, the learned senior
+			Departmental representative has fairly -submitted that there is
+			no stay which has been granted by the hon’ble Supreme Court against
+			the decision rendered by the hon’ble Punjab and Haryana High Court.
+			Further, he has relied on the orders of the lower authorities.
+		</Para>
+		<Para>
+			<Bold>10.</Bold> I have heard the rival contentions and perused
+			the material available on the record. In the instant case, it is
+			noted that the notice under section 148 has been issued on March
+			30, 2023 by the Income-tax Officer, Ward, Nabha who is the jurisdictional
+			Assessing Officer and not by the Faceless Assessment Unit. The said
+			notice has been issued almost after a year from the issuance of
+			notification by the Ministry of Finance, Government of India on
+			March 29, 2022 requiring issuance of notice and conduct of assessment
+			proceedings by the Faceless Assessment Unit. There is thus a clear
+			breach of the binding notification so issued under section 144B requiring
+			issuance of notices and conduct of proceedings through the Faceless
+			Assessment Unit. The co-ordinate Bench in the case of <Reference>
+				<CRTo>
+					<Title>Dy. CIT v. Aman Batra</Title>
+				</CRTo>
+			</Reference><Footnote>10</Footnote> and thereafter in case of
+			<Reference>
+				<CRTo>
+					<Title>Bagga Singh v. Dy. CIT (International Taxation)</Title>
+				</CRTo>
+			</Reference><Footnote>9</Footnote>has
+			referred to the decision of the hon’ble jurisdictional High Court
+			wherein the notice issued by the jurisdictional Assessing Officer
+			has been quashed by the hon’ble Punjab and Haryana High Court and
+			by following the same, it has been held that the notice so issued
+			is bad in law. Nothing has been brought on record to deviate from
+			the view so taken<page no="760"></page>by the co-ordinate Benches which in turn are guided
+			by the decision of the hon’ble jurisdictional High Court. Respectfully
+			following the -decision of hon’ble jurisdictional High Court which
+			has been followed by the co-ordinate Benches in the decisions referred
+			supra, the notice so issued on March 30, 2023 by the jurisdictional
+			Assessing Officer, i. e., Income-tax Officer, Ward Nabha is clearly
+			without jurisdiction and bad in law. In light of the same, the additional
+			ground of appeal so taken by the assessee is hereby allowed.
+		</Para>
+		<Para>
+			<Bold>11.</Bold> In light of the aforesaid, the other grounds
+			of appeal have become academic in nature and the same are left open
+			and not adjudicated upon.
+		</Para>
+		<Para>
+			<Bold>12.</Bold> In the result, the appeal of the assessee
+			is allowed.
+		</Para>
+		<Para>Order pronounced in the open court on August 18, 2025.</Para>
+	</JudgmentGroup>
+	<Footnotes>
+		<Link>1</Link>
+		<LinkCont>
+			2025 SCC
+			OnLine ITAT 9124.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>2</Link>
+		<LinkCont>[2022] 442 ITR (St.) 198.</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>3</Link>
+		<LinkCont>
+			[2024] 466 ITR 474 (P&amp;H) ; 2024 SCC OnLine P&amp;H
+			9337.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>4</Link>
+		<LinkCont>
+			[1998]
+			229 ITR 383 (SC) ; [2003] 132 STC 566 (SC) ; (1997) 7 SCC 489 ;
+			1996 SCC OnLine SC 173.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>5</Link>
+		<LinkCont>
+			[1998] 229
+			ITR 383 (SC) ; [2003] 132 STC 566 (SC) ; (1997) 7 SCC 489 ; 1996
+			SCC OnLine SC 173.
+		</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>6</Link>
+		<LinkCont>2025 SCC OnLine ITAT 6348.</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>7</Link>
+		<LinkCont>[2024] 466 ITR 474 (P&amp;H) ; 2024 SCC OnLine P&amp;H 9337.</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>8</Link>
+		<LinkCont>[2024] 467 ITR 52 (P&amp;H) ; 2024 SCC OnLine P&amp;H 9677.</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>9</Link>
+		<LinkCont>2025 SCC OnLine ITAT 6284.</LinkCont>
+	</Footnotes>
+	<Footnotes>
+		<Link>10</Link>
+		<LinkCont>
+			2025
+			SCC OnLine ITAT 6348.
+		</LinkCont>
+	</Footnotes>
+</TCase>
