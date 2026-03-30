@@ -35,8 +35,119 @@ function classifyParagraphTag(style) {
   return 'Para';
 }
 
+function collectText(node) {
+  return (node.children ?? [])
+    .map((child) => (typeof child === 'string' ? child : collectText(child)))
+    .join('');
+}
+
+function findChildren(node, tag) {
+  return (node.children ?? []).filter((child) => typeof child === 'object' && child.tag === tag);
+}
+
+function findFirstChild(node, tag) {
+  return findChildren(node, tag)[0] ?? null;
+}
+
+function findFirstDescendant(node, predicate) {
+  for (const child of node.children ?? []) {
+    if (typeof child !== 'object') continue;
+    if (predicate(child)) return child;
+    const nested = findFirstDescendant(child, predicate);
+    if (nested) return nested;
+  }
+  return null;
+}
+
+function normalizeSpace(text) {
+  return text.replace(/\s+/g, ' ').trim();
+}
+
+function cleanBenchText(text) {
+  return normalizeSpace(text.replace(/\]/g, '').replace(/^\s*[—-]\s*/, ''));
+}
+
+function renderSemanticNode(node, indent = 1) {
+  const childNodes = [];
+  let pendingText = '';
+
+  for (const child of node.children ?? []) {
+    if (typeof child === 'string') {
+      if (node.tag === 'ApellantGroup' && normalizeSpace(child).toLowerCase() === 'v.') continue;
+      pendingText += child;
+      continue;
+    }
+    if (pendingText.trim()) childNodes.push(normalizeSpace(pendingText));
+    pendingText = '';
+    childNodes.push(rawXml(renderSemanticNode(child, indent + 1)));
+  }
+  if (pendingText.trim()) childNodes.push(normalizeSpace(pendingText));
+
+  return buildXml(node.tag, node.attrs ?? {}, childNodes, indent);
+}
+
+function mapSemanticCase(semanticTree) {
+  const tCase = findFirstDescendant(semanticTree, (node) => node.tag === 'TCase' && node.attrs?.ID && node.attrs?.Shtitle);
+  if (!tCase) return null;
+
+  const caseIdNode = findFirstChild(tCase, 'CaseId');
+  const shCourtName = normalizeSpace(collectText(findFirstChild(caseIdNode ?? { children: [] }, 'ShCourtName') ?? { children: [] }));
+
+  const courtNode = findFirstChild(tCase, 'court');
+  const courtName = normalizeSpace(
+    collectText(findFirstChild(courtNode ?? { children: [] }, 'CourtName') ?? { children: [] }).replace(/^\[Before the\s*/i, ''),
+  );
+  const benchRaw = collectText(findFirstChild(courtNode ?? { children: [] }, 'Bench') ?? { children: [] });
+  const bench = cleanBenchText(benchRaw);
+  const benchAttrs = findFirstChild(courtNode ?? { children: [] }, 'Bench')?.attrs ?? {};
+
+  const causeTitleGroup = findFirstChild(tCase, 'CauseTitleGroup');
+
+  const mappedChildren = [
+    rawXml(
+      buildXml(
+        'CaseId',
+        {},
+        [rawXml(buildXml('Pagenum', {}, shCourtName ? [rawXml(buildXml('ShCourtName', {}, [shCourtName], 4))] : [], 3))],
+        2,
+      ),
+    ),
+    rawXml(
+      buildXml(
+        'court',
+        {},
+        [
+          rawXml(buildXml('CourtName', {}, courtName ? [courtName] : [], 3)),
+          rawXml(buildXml('Bench', benchAttrs, bench ? [bench] : [], 3)),
+        ],
+        2,
+      ),
+    ),
+  ];
+
+  if (causeTitleGroup) {
+    mappedChildren.push(rawXml(renderSemanticNode(causeTitleGroup, 2)));
+  }
+
+  return buildXml(
+    'TCase',
+    {
+      ID: tCase.attrs?.ID ?? '',
+      Shtitle: tCase.attrs?.Shtitle ?? '',
+      Appendix: 'N',
+    },
+    mappedChildren,
+    0,
+  );
+}
+
 export function transformMifToXml(parsed, inferredSchema, sourceName) {
-  const { textRects, tables } = parsed;
+  const { textRects, tables, semanticTree } = parsed;
+
+  const semanticXml = semanticTree ? mapSemanticCase(semanticTree) : null;
+  if (semanticXml) {
+    return `<?xml version="1.0" encoding="UTF-8"?>\n${semanticXml}\n`;
+  }
 
   const textRectNodes = textRects.map((rect) => {
     const paraNodes = rect.paragraphs

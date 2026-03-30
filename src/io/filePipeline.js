@@ -1,6 +1,6 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { parseMifToTree, parseParagraphs, parseTables, parseTextRects } from '../parser/mifParser.js';
+import { parseMifToTree, parseParagraphs, parseSemanticTree, parseTables, parseTextRects } from '../parser/mifParser.js';
 import { transformMifToXml } from '../transform/mapper.js';
 import { logger } from '../utils/logger.js';
 
@@ -21,6 +21,7 @@ export async function convertOneMif({ mifPath, outputDir, inferredSchema }) {
   const paragraphs = parseParagraphs(tree);
   const textRects = parseTextRects(tree);
   const tables = parseTables(tree);
+  const semanticTree = parseSemanticTree(tree);
 
   logger.debug('Parsed structure summary', {
     paragraphs: paragraphs.length,
@@ -28,7 +29,7 @@ export async function convertOneMif({ mifPath, outputDir, inferredSchema }) {
     tables: tables.length,
   });
 
-  const xml = transformMifToXml({ paragraphs, textRects, tables }, inferredSchema, path.basename(mifPath));
+  const xml = transformMifToXml({ paragraphs, textRects, tables, semanticTree }, inferredSchema, path.basename(mifPath));
 
   const outputName = `${path.basename(mifPath, path.extname(mifPath))}.xml`;
   const outputPath = path.join(outputDir, outputName);
