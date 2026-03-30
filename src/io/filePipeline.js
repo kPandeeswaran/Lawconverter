@@ -1,7 +1,7 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { parseMifToTree, parseParagraphs, parseSemanticTree, parseTables, parseTextRects } from '../parser/mifParser.js';
-import { transformMifToXml } from '../transform/mapper.js';
+import { transformMifToSplitXmlByTag, transformMifToXml } from '../transform/mapper.js';
 import { logger } from '../utils/logger.js';
 
 export async function ensureDir(dir) {
@@ -29,11 +29,39 @@ export async function convertOneMif({ mifPath, outputDir, inferredSchema }) {
     tables: tables.length,
   });
 
-  const xml = transformMifToXml({ paragraphs, textRects, tables, semanticTree }, inferredSchema, path.basename(mifPath));
+  const parsed = { paragraphs, textRects, tables, semanticTree };
+  const splitCases = transformMifToSplitXmlByTag(parsed, 'TCase');
+
+  if (splitCases.length) {
+    const sourceBaseName = path.basename(mifPath, path.extname(mifPath));
+    const outputs = [];
+
+    for (const [index, splitCase] of splitCases.entries()) {
+      const rawCaseId = splitCase.id ? String(splitCase.id).trim() : '';
+      const safeCaseId = rawCaseId.replace(/[^\w.-]+/g, '_').replace(/^_+|_+$/g, '');
+      const suffix = safeCaseId || `TCase_${index + 1}`;
+      const outputName = `${sourceBaseName}_${suffix}.xml`;
+      const outputPath = path.join(outputDir, outputName);
+      await fs.writeFile(outputPath, splitCase.xml, 'utf8');
+      outputs.push(outputPath);
+    }
+
+    return {
+      outputPath: outputs[0],
+      outputPaths: outputs,
+      splitByTag: 'TCase',
+      splitCount: outputs.length,
+      paragraphs: paragraphs.length,
+      textRects: textRects.length,
+      tables: tables.length,
+    };
+  }
+
+  const xml = transformMifToXml(parsed, inferredSchema, path.basename(mifPath));
 
   const outputName = `${path.basename(mifPath, path.extname(mifPath))}.xml`;
   const outputPath = path.join(outputDir, outputName);
   await fs.writeFile(outputPath, xml, 'utf8');
 
-  return { outputPath, paragraphs: paragraphs.length, textRects: textRects.length, tables: tables.length };
+  return { outputPath, outputPaths: [outputPath], paragraphs: paragraphs.length, textRects: textRects.length, tables: tables.length };
 }

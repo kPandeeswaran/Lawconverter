@@ -84,3 +84,10 @@ Input: `mif/133_1.mif`
 Output: `output/133_1.xml`
 
 The output root/body tags are inferred from `sample/*.xml`, then filled with converted MIF paragraphs and tables.
+
+## Semantic split mode
+
+When semantic markup contains `ElementBegin` records whose `ETag` is `TCase`, the converter now treats `TCase` as a base split tag and writes one XML file per case.
+
+- Naming pattern: `<mif-basename>_<TCase.ID>.xml`
+- If `ID` is missing/unsafe, fallback naming is `<mif-basename>_TCase_<n>.xml`

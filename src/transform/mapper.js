@@ -96,6 +96,31 @@ function mapSemanticCase(semanticTree) {
   return buildXml('TCase', { ...tCase.attrs, Appendix: tCase.attrs?.Appendix ?? 'N' }, mappedChildren, 0);
 }
 
+function mapSemanticCases(semanticTree) {
+  const cases = [];
+
+  const walk = (node) => {
+    if (!node || typeof node !== 'object') return;
+    if (node.tag === 'TCase' && node.attrs?.ID && node.attrs?.Shtitle) cases.push(node);
+    for (const child of node.children ?? []) {
+      if (typeof child === 'object') walk(child);
+    }
+  };
+
+  walk(semanticTree);
+
+  return cases.map((tCase) => {
+    const mappedChildren = (tCase.children ?? [])
+      .filter((child) => typeof child === 'object')
+      .map((child) => rawXml(renderSemanticNode(child, 1)));
+
+    return {
+      id: tCase.attrs.ID,
+      xml: `<?xml version="1.0" encoding="UTF-8"?>\n${buildXml('TCase', { ...tCase.attrs, Appendix: tCase.attrs?.Appendix ?? 'N' }, mappedChildren, 0)}\n`,
+    };
+  });
+}
+
 export function transformMifToXml(parsed, inferredSchema, sourceName) {
   const { textRects, tables, semanticTree } = parsed;
 
@@ -162,4 +187,9 @@ export function transformMifToXml(parsed, inferredSchema, sourceName) {
   );
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n${root}\n`;
+}
+
+export function transformMifToSplitXmlByTag(parsed, baseTag) {
+  if (!parsed?.semanticTree || baseTag !== 'TCase') return [];
+  return mapSemanticCases(parsed.semanticTree);
 }
