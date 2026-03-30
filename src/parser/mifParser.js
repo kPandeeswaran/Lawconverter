@@ -160,3 +160,67 @@ export function parseTables(tree) {
     };
   });
 }
+
+function parseElementBegin(elementBeginNode) {
+  const tag = elementBeginNode.children.find((c) => c.name === 'ETag')?.value ?? null;
+  const attrsNode = elementBeginNode.children.find((c) => c.name === 'Attributes');
+  const attrs = {};
+
+  for (const child of attrsNode?.children ?? []) {
+    if (child.name !== 'Attribute') continue;
+    const name = child.children.find((x) => x.name === 'AttrName')?.value;
+    const value = child.children.find((x) => x.name === 'AttrValue')?.value ?? '';
+    if (name) attrs[name] = value;
+  }
+
+  return { tag, attrs };
+}
+
+function appendText(node, text) {
+  if (!text) return;
+  const last = node.children[node.children.length - 1];
+  if (typeof last === 'string') {
+    node.children[node.children.length - 1] = `${last}${text}`;
+  } else {
+    node.children.push(text);
+  }
+}
+
+export function parseSemanticTree(tree) {
+  const root = { tag: '__root__', attrs: {}, children: [] };
+  const stack = [root];
+  const paraLines = collectByName(tree, 'ParaLine');
+  const fnoteMap = new Map();
+  let fnoteCounter = 0;
+
+  for (const paraLine of paraLines) {
+    for (const token of paraLine.children ?? []) {
+      if (token.name === 'ElementBegin') {
+        const parsed = parseElementBegin(token);
+        if (!parsed.tag) continue;
+        const node = { tag: parsed.tag, attrs: parsed.attrs, children: [] };
+        stack[stack.length - 1].children.push(node);
+        stack.push(node);
+      } else if (token.name === 'ElementEnd') {
+        const closeTag = token.value;
+        if (!closeTag) continue;
+        while (stack.length > 1 && stack[stack.length - 1].tag !== closeTag) stack.pop();
+        if (stack.length > 1) stack.pop();
+      } else if (token.name === 'String') {
+        appendText(stack[stack.length - 1], token.value ?? '');
+      } else if (token.name === 'Char') {
+        if (token.value === 'HardReturn') appendText(stack[stack.length - 1], '\n');
+        if (token.value === 'DiscHyphen') appendText(stack[stack.length - 1], '-');
+      } else if (token.name === 'FNote') {
+        const raw = token.value ?? '';
+        if (!fnoteMap.has(raw)) {
+          fnoteCounter += 1;
+          fnoteMap.set(raw, String(fnoteCounter));
+        }
+        stack[stack.length - 1].children.push({ tag: 'Footnote', attrs: {}, children: [fnoteMap.get(raw)] });
+      }
+    }
+  }
+
+  return root;
+}
