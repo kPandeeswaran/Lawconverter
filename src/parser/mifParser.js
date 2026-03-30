@@ -198,7 +198,12 @@ export function parseSemanticTree(tree) {
       if (token.name === 'ElementBegin') {
         const parsed = parseElementBegin(token);
         if (!parsed.tag) continue;
-        const node = { tag: parsed.tag, attrs: parsed.attrs, children: [] };
+        const node = {
+          tag: parsed.tag,
+          attrs: parsed.attrs,
+          children: [],
+          _inSuffix: false,
+        };
         stack[stack.length - 1].children.push(node);
         stack.push(node);
       } else if (token.name === 'ElementEnd') {
@@ -206,11 +211,22 @@ export function parseSemanticTree(tree) {
         if (!closeTag) continue;
         while (stack.length > 1 && stack[stack.length - 1].tag !== closeTag) stack.pop();
         if (stack.length > 1) stack.pop();
+      } else if (token.name === 'PrefixEnd') {
+        const current = stack[stack.length - 1];
+        if (current?.children?.length) {
+          current.children = current.children.filter((child) => typeof child !== 'string');
+        }
+      } else if (token.name === 'SuffixBegin') {
+        const current = stack[stack.length - 1];
+        if (current) current._inSuffix = true;
       } else if (token.name === 'String') {
-        appendText(stack[stack.length - 1], token.value ?? '');
+        const current = stack[stack.length - 1];
+        if (!current?._inSuffix) appendText(current, token.value ?? '');
       } else if (token.name === 'Char') {
-        if (token.value === 'HardReturn') appendText(stack[stack.length - 1], '\n');
-        if (token.value === 'DiscHyphen') appendText(stack[stack.length - 1], '-');
+        const current = stack[stack.length - 1];
+        if (current?._inSuffix) continue;
+        if (token.value === 'HardReturn') appendText(current, '\n');
+        if (token.value === 'DiscHyphen') appendText(current, '-');
       } else if (token.name === 'FNote') {
         const raw = token.value ?? '';
         if (!fnoteMap.has(raw)) {
@@ -221,6 +237,15 @@ export function parseSemanticTree(tree) {
       }
     }
   }
+
+  // Strip parser-internal state keys.
+  const stripInternal = (node) => {
+    if (typeof node !== 'object' || node === null) return node;
+    if (Array.isArray(node.children)) node.children = node.children.map(stripInternal);
+    delete node._inSuffix;
+    return node;
+  };
+  stripInternal(root);
 
   return root;
 }
