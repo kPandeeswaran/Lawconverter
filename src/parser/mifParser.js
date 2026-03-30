@@ -192,12 +192,20 @@ export function parseSemanticTree(tree) {
   const paraLines = collectByName(tree, 'ParaLine');
   const fnoteMap = new Map();
   let fnoteCounter = 0;
+  let pendingCasePageCapture = false;
+  let nextIncrementalPageNo = null;
+  let textRectPageMap = new Map();
 
   for (const paraLine of paraLines) {
     for (const token of paraLine.children ?? []) {
       if (token.name === 'ElementBegin') {
         const parsed = parseElementBegin(token);
         if (!parsed.tag) continue;
+        if (parsed.tag === 'TCase') {
+          pendingCasePageCapture = false;
+          nextIncrementalPageNo = null;
+          textRectPageMap = new Map();
+        }
         const node = {
           tag: parsed.tag,
           attrs: parsed.attrs,
@@ -216,10 +224,29 @@ export function parseSemanticTree(tree) {
         if (current?.children?.length) {
           current.children = current.children.filter((child) => typeof child !== 'string');
         }
+      } else if (token.name === 'XRef') {
+        const isCurrentCasePageRef = (token.children ?? []).some(
+          (child) => child.name === 'XRefName' && child.value === 'CurCasepagenum',
+        );
+        if (isCurrentCasePageRef) pendingCasePageCapture = true;
+      } else if (token.name === 'TextRectID') {
+        const textRectId = token.value ?? null;
+        if (!textRectId || nextIncrementalPageNo === null || textRectPageMap.has(textRectId)) continue;
+        const pageNo = String(nextIncrementalPageNo);
+        textRectPageMap.set(textRectId, pageNo);
+        stack[stack.length - 1].children.push({ tag: 'page', attrs: { no: pageNo }, children: [] });
+        nextIncrementalPageNo += 1;
       } else if (token.name === 'SuffixBegin') {
         const current = stack[stack.length - 1];
         if (current) current._inSuffix = true;
       } else if (token.name === 'String') {
+        if (pendingCasePageCapture) {
+          const parsedPage = Number.parseInt(token.value ?? '', 10);
+          if (Number.isFinite(parsedPage)) {
+            nextIncrementalPageNo = parsedPage + 1;
+            pendingCasePageCapture = false;
+          }
+        }
         const current = stack[stack.length - 1];
         if (!current?._inSuffix) appendText(current, token.value ?? '');
       } else if (token.name === 'Char') {
