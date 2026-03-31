@@ -87,7 +87,7 @@ The output root/body tags are inferred from `sample/*.xml`, then filled with con
 
 ## Semantic split mode
 
-When semantic markup contains `ElementBegin` records whose `ETag` is `TCase`, the converter now treats `TCase` as a base split tag and writes one XML file per case.
+When semantic markup contains `ElementBegin` records whose `ETag` is `TCase` (or `Case`), the converter treats that tag as a split boundary and writes one XML file per case.
 
-- Naming pattern: `<mif-basename>_<TCase.ID>.xml`
-- If `ID` is missing/unsafe, fallback naming is `<mif-basename>_TCase_<n>.xml`
+- Naming pattern: `<mif-basename>_<Case.ID>.xml`
+- If `ID` is missing/unsafe, fallback naming is `<mif-basename>_<Tag>_<n>.xml`

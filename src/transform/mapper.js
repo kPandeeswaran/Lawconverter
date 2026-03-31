@@ -86,22 +86,40 @@ function renderSemanticNode(node, indent = 1) {
   return buildXml(node.tag, node.attrs ?? {}, childNodes, indent);
 }
 
-function mapSemanticCase(semanticTree) {
-  const tCase = findFirstDescendant(semanticTree, (node) => node.tag === 'TCase' && node.attrs?.ID && node.attrs?.Shtitle);
-  if (!tCase) return null;
-  const mappedChildren = (tCase.children ?? [])
+function mapSemanticNode(semanticTree, tagName, requiredAttrs = []) {
+  const semanticNode = findFirstDescendant(
+    semanticTree,
+    (node) =>
+      node.tag === tagName &&
+      requiredAttrs.every((attr) => {
+        const value = node.attrs?.[attr];
+        return value !== undefined && value !== null && String(value).trim() !== '';
+      }),
+  );
+
+  if (!semanticNode) return null;
+
+  const mappedChildren = (semanticNode.children ?? [])
     .filter((child) => typeof child === 'object')
     .map((child) => rawXml(renderSemanticNode(child, 1)));
 
-  return buildXml('TCase', { ...tCase.attrs, Appendix: tCase.attrs?.Appendix ?? 'N' }, mappedChildren, 0);
+  return buildXml(tagName, { ...semanticNode.attrs, Appendix: semanticNode.attrs?.Appendix ?? 'N' }, mappedChildren, 0);
 }
 
-function mapSemanticCases(semanticTree) {
-  const cases = [];
+function mapSemanticNodesByTag(semanticTree, tagName, requiredAttrs = []) {
+  const nodes = [];
 
   const walk = (node) => {
     if (!node || typeof node !== 'object') return;
-    if (node.tag === 'TCase' && node.attrs?.ID && node.attrs?.Shtitle) cases.push(node);
+    if (
+      node.tag === tagName &&
+      requiredAttrs.every((attr) => {
+        const value = node.attrs?.[attr];
+        return value !== undefined && value !== null && String(value).trim() !== '';
+      })
+    ) {
+      nodes.push(node);
+    }
     for (const child of node.children ?? []) {
       if (typeof child === 'object') walk(child);
     }
@@ -109,14 +127,15 @@ function mapSemanticCases(semanticTree) {
 
   walk(semanticTree);
 
-  return cases.map((tCase) => {
-    const mappedChildren = (tCase.children ?? [])
+  return nodes.map((semanticNode) => {
+    const mappedChildren = (semanticNode.children ?? [])
       .filter((child) => typeof child === 'object')
       .map((child) => rawXml(renderSemanticNode(child, 1)));
 
     return {
-      id: tCase.attrs.ID,
-      xml: `<?xml version="1.0" encoding="UTF-8"?>\n${buildXml('TCase', { ...tCase.attrs, Appendix: tCase.attrs?.Appendix ?? 'N' }, mappedChildren, 0)}\n`,
+      id: semanticNode.attrs?.ID,
+      tag: tagName,
+      xml: `<?xml version="1.0" encoding="UTF-8"?>\n${buildXml(tagName, { ...semanticNode.attrs, Appendix: semanticNode.attrs?.Appendix ?? 'N' }, mappedChildren, 0)}\n`,
     };
   });
 }
@@ -124,7 +143,9 @@ function mapSemanticCases(semanticTree) {
 export function transformMifToXml(parsed, inferredSchema, sourceName) {
   const { textRects, tables, semanticTree } = parsed;
 
-  const semanticXml = semanticTree ? mapSemanticCase(semanticTree) : null;
+  const semanticXml = semanticTree
+    ? mapSemanticNode(semanticTree, 'TCase', ['ID', 'Shtitle']) ?? mapSemanticNode(semanticTree, 'Case', ['ID'])
+    : null;
   if (semanticXml) {
     return `<?xml version="1.0" encoding="UTF-8"?>\n${semanticXml}\n`;
   }
@@ -190,6 +211,16 @@ export function transformMifToXml(parsed, inferredSchema, sourceName) {
 }
 
 export function transformMifToSplitXmlByTag(parsed, baseTag) {
-  if (!parsed?.semanticTree || baseTag !== 'TCase') return [];
-  return mapSemanticCases(parsed.semanticTree);
+  if (!parsed?.semanticTree) return [];
+
+  const splitTags = Array.isArray(baseTag) ? baseTag : [baseTag];
+  const normalizedTags = splitTags.map((tag) => String(tag ?? '').trim()).filter(Boolean);
+
+  for (const tag of normalizedTags) {
+    const requiredAttrs = tag === 'TCase' ? ['ID', 'Shtitle'] : tag === 'Case' ? ['ID'] : [];
+    const splitNodes = mapSemanticNodesByTag(parsed.semanticTree, tag, requiredAttrs);
+    if (splitNodes.length) return splitNodes;
+  }
+
+  return [];
 }
