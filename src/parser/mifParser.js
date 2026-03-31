@@ -137,23 +137,40 @@ export function parseTextRects(tree) {
 
 export function parseTables(tree) {
   const tables = collectByName(tree, 'Tbl');
+
+  const findDescendantsByName = (node, name, out = []) => {
+    for (const child of node.children ?? []) {
+      if (child.name === name) out.push(child);
+      findDescendantsByName(child, name, out);
+    }
+    return out;
+  };
+
+  const extractCellText = (cellNode) => {
+    const paragraphs = findDescendantsByName(cellNode, 'Para');
+    return paragraphs
+      .flatMap((p) => parseParaLines(p).map((l) => l.strings))
+      .join(' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  };
+
   return tables.map((tblNode, index) => {
-    const rows = tblNode.children.filter((child) => child.name === 'Row');
+    const tableId = tblNode.children.find((child) => child.name === 'TblID')?.value ?? null;
+    const rows = findDescendantsByName(tblNode, 'Row');
     return {
       index,
+      id: tableId,
       line: tblNode.line,
       rows: rows.map((rowNode, rIdx) => {
         const cells = rowNode.children.filter((c) => c.name === 'Cell');
         return {
           rowIndex: rIdx,
           cells: cells.map((cellNode, cIdx) => {
-            const paragraphs = cellNode.children.filter((c) => c.name === 'Para');
-            const text = paragraphs
-              .flatMap((p) => parseParaLines(p).map((l) => l.strings))
-              .join(' ')
-              .replace(/\s+/g, ' ')
-              .trim();
-            return { cellIndex: cIdx, text };
+            const rowSpan = Number.parseInt(cellNode.children.find((c) => c.name === 'CellRows')?.value ?? '1', 10) || 1;
+            const colSpan = Number.parseInt(cellNode.children.find((c) => c.name === 'CellColumns')?.value ?? '1', 10) || 1;
+            const text = extractCellText(cellNode);
+            return { cellIndex: cIdx, rowSpan, colSpan, text };
           }),
         };
       }),
@@ -186,10 +203,35 @@ function appendText(node, text) {
   }
 }
 
-export function parseSemanticTree(tree) {
+function buildSemanticTableNode(table) {
+  return {
+    tag: 'Table',
+    attrs: { id: table.id ?? String(table.index + 1) },
+    children: table.rows.map((row) => ({
+      tag: 'Row',
+      attrs: { index: String(row.rowIndex) },
+      children: row.cells.map((cell) => ({
+        tag: 'Cell',
+        attrs: {
+          index: String(cell.cellIndex),
+          ...(cell.rowSpan > 1 ? { rowSpan: String(cell.rowSpan) } : {}),
+          ...(cell.colSpan > 1 ? { colSpan: String(cell.colSpan) } : {}),
+        },
+        children: cell.text ? [cell.text] : [],
+      })),
+    })),
+  };
+}
+
+export function parseSemanticTree(tree, tables = []) {
   const root = { tag: '__root__', attrs: {}, children: [] };
   const stack = [root];
   const paraLines = collectByName(tree, 'ParaLine');
+  const tableMapById = new Map(
+    tables
+      .filter((table) => table.id !== null && table.id !== undefined)
+      .map((table) => [String(table.id), table]),
+  );
   const fnoteMap = new Map();
   let fnoteCounter = 0;
   let pendingCasePageCapture = false;
@@ -254,6 +296,16 @@ export function parseSemanticTree(tree) {
         if (current?._inSuffix) continue;
         if (token.value === 'HardReturn') appendText(current, '\n');
         if (token.value === 'DiscHyphen') appendText(current, '-');
+      } else if (token.name === 'ATbl') {
+        const current = stack[stack.length - 1];
+        if (current?._inSuffix) continue;
+        const atblId = String(token.value ?? '').trim();
+        const table = tableMapById.get(atblId);
+        if (table) {
+          current.children.push(buildSemanticTableNode(table));
+        } else {
+          current.children.push({ tag: 'TableRef', attrs: { id: atblId }, children: [] });
+        }
       } else if (token.name === 'FNote') {
         const raw = token.value ?? '';
         if (!fnoteMap.has(raw)) {
