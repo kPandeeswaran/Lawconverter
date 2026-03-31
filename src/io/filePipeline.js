@@ -30,7 +30,7 @@ export async function convertOneMif({ mifPath, outputDir, inferredSchema }) {
   });
 
   const parsed = { paragraphs, textRects, tables, semanticTree };
-  const splitCases = transformMifToSplitXmlByTag(parsed, 'TCase');
+  const splitCases = transformMifToSplitXmlByTag(parsed, ['TCase', 'Case']);
 
   if (splitCases.length) {
     const sourceBaseName = path.basename(mifPath, path.extname(mifPath));
@@ -39,7 +39,8 @@ export async function convertOneMif({ mifPath, outputDir, inferredSchema }) {
     for (const [index, splitCase] of splitCases.entries()) {
       const rawCaseId = splitCase.id ? String(splitCase.id).trim() : '';
       const safeCaseId = rawCaseId.replace(/[^\w.-]+/g, '_').replace(/^_+|_+$/g, '');
-      const suffix = safeCaseId || `TCase_${index + 1}`;
+      const splitTag = splitCase.tag ? String(splitCase.tag).trim() : 'Case';
+      const suffix = safeCaseId || `${splitTag}_${index + 1}`;
       const outputName = `${sourceBaseName}_${suffix}.xml`;
       const outputPath = path.join(outputDir, outputName);
       await fs.writeFile(outputPath, splitCase.xml, 'utf8');
@@ -49,7 +50,7 @@ export async function convertOneMif({ mifPath, outputDir, inferredSchema }) {
     return {
       outputPath: outputs[0],
       outputPaths: outputs,
-      splitByTag: 'TCase',
+      splitByTag: splitCases[0]?.tag ?? 'Case',
       splitCount: outputs.length,
       paragraphs: paragraphs.length,
       textRects: textRects.length,
