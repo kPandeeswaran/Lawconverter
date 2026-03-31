@@ -168,14 +168,28 @@ export function transformMifToXml(parsed, inferredSchema, sourceName) {
   const tableNodes = tables.map((t) =>
     rawXml(
       buildXml(
-        'Table',
-        { index: t.index },
+        'TABLE',
+        { ID: String(t.id ?? t.index + 1), BORDER: '1' },
         t.rows.map((row) =>
           rawXml(
             buildXml(
-              'Row',
-              { index: row.rowIndex },
-              row.cells.map((cell) => rawXml(buildXml('Cell', { index: cell.cellIndex }, cell.text ? [cell.text] : [], 5))),
+              'TR',
+              {},
+              row.cells.map((cell) =>
+                rawXml(
+                  buildXml(
+                    'TD',
+                    {
+                      ...(cell.rowSpan > 1 ? { ROWSPAN: String(cell.rowSpan) } : {}),
+                      ...(cell.colSpan > 1 ? { COLSPAN: String(cell.colSpan) } : {}),
+                      ALIGN: 'LEFT',
+                      VALIGN: 'TOP',
+                    },
+                    cell.text ? [rawXml(buildXml('P', {}, [cell.text], 6))] : [],
+                    5,
+                  ),
+                ),
+              ),
               4,
             ),
           ),
