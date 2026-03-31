@@ -10,8 +10,6 @@
 
 /** @typedef {{name: string, rawValue: string, value: string | null, children: MifNode[], line: number}} MifNode */
 
-const SOFT_HYPHEN = '\u00AD';
-
 function unquoteMifValue(raw) {
   if (!raw) return null;
   const trimmed = raw.trim();
@@ -76,7 +74,7 @@ export function extractStrings(paraLineNode) {
     if (child.name === 'String' && child.value !== null) strings.push(child.value);
     if (child.name === 'Char') {
       if (child.value === 'HardReturn') strings.push('\n');
-      if (child.value === 'SoftHyphen') strings.push(SOFT_HYPHEN);
+      if (child.value === 'SoftHyphen') strings.push('-');
       if (child.value === 'DiscHyphen') strings.push('-');
     }
   }
@@ -146,13 +144,20 @@ export function parseTables(tree) {
     return out;
   };
 
-  const extractCellText = (cellNode) => {
+  const extractCellParagraphs = (cellNode) => {
     const paragraphs = findDescendantsByName(cellNode, 'Para');
-    return paragraphs
-      .flatMap((p) => parseParaLines(p).map((l) => l.strings))
-      .join(' ')
-      .replace(/\s+/g, ' ')
-      .trim();
+    return paragraphs.map((paraNode) => {
+      const style = paraNode.children.find((x) => x.name === 'PgfTag')?.value ?? 'Unknown';
+      const pgfNode = paraNode.children.find((x) => x.name === 'Pgf');
+      const align = pgfNode?.children.find((x) => x.name === 'PgfAlignment')?.value ?? null;
+      const cellAlignment = pgfNode?.children.find((x) => x.name === 'PgfCellAlignment')?.value ?? null;
+      const text = parseParaLines(paraNode)
+        .map((line) => line.strings)
+        .join(' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+      return { style, align, cellAlignment, text };
+    });
   };
 
   return tables.map((tblNode, index) => {
@@ -169,8 +174,14 @@ export function parseTables(tree) {
           cells: cells.map((cellNode, cIdx) => {
             const rowSpan = Number.parseInt(cellNode.children.find((c) => c.name === 'CellRows')?.value ?? '1', 10) || 1;
             const colSpan = Number.parseInt(cellNode.children.find((c) => c.name === 'CellColumns')?.value ?? '1', 10) || 1;
-            const text = extractCellText(cellNode);
-            return { cellIndex: cIdx, rowSpan, colSpan, text };
+            const paragraphs = extractCellParagraphs(cellNode);
+            return {
+              cellIndex: cIdx,
+              rowSpan,
+              colSpan,
+              text: paragraphs.map((p) => p.text).join(' ').replace(/\s+/g, ' ').trim(),
+              paragraphs,
+            };
           }),
         };
       }),
@@ -204,21 +215,55 @@ function appendText(node, text) {
 }
 
 function buildSemanticTableNode(table) {
+  const resolveCellFormatting = (cell) => {
+    const firstPara = cell.paragraphs?.find((para) => para.text) ?? cell.paragraphs?.[0] ?? null;
+    const style = firstPara?.style ?? 'CellBody';
+    const paraAlignment = String(firstPara?.align ?? '').toLowerCase();
+    const cellAlignment = String(firstPara?.cellAlignment ?? '').toLowerCase();
+
+    if (style === 'CellHeading') {
+      if (paraAlignment === 'left') return { align: 'LEFT', valign: 'TOP', italic: true };
+      if (cellAlignment === 'top') return { align: 'CENTER', valign: 'TOP', italic: true };
+      return { align: 'CENTER', valign: 'CENTER', italic: true };
+    }
+
+    if (paraAlignment === 'center') return { align: 'CENTER', valign: 'TOP', italic: false };
+    if (paraAlignment === 'right') return { align: 'RIGHT', valign: 'TOP', italic: false };
+    return { align: 'LEFT', valign: 'TOP', italic: false };
+  };
+
+  const buildCellChildren = (cell, italic) => {
+    const paragraphTexts = (cell.paragraphs ?? []).map((para) => para.text).filter(Boolean);
+    if (!paragraphTexts.length) return [];
+
+    const formattedContent = [];
+    paragraphTexts.forEach((text, index) => {
+      if (index > 0) formattedContent.push({ tag: 'BR', attrs: {}, children: [] });
+      formattedContent.push(italic ? { tag: 'ITALICS', attrs: {}, children: [text] } : text);
+    });
+
+    return [{ tag: 'P', attrs: {}, children: formattedContent }];
+  };
+
   return {
-    tag: 'Table',
-    attrs: { id: table.id ?? String(table.index + 1) },
+    tag: 'TABLE',
+    attrs: { ID: table.id ?? String(table.index + 1), BORDER: '1' },
     children: table.rows.map((row) => ({
-      tag: 'Row',
-      attrs: { index: String(row.rowIndex) },
-      children: row.cells.map((cell) => ({
-        tag: 'Cell',
-        attrs: {
-          index: String(cell.cellIndex),
-          ...(cell.rowSpan > 1 ? { rowSpan: String(cell.rowSpan) } : {}),
-          ...(cell.colSpan > 1 ? { colSpan: String(cell.colSpan) } : {}),
-        },
-        children: cell.text ? [cell.text] : [],
-      })),
+      tag: 'TR',
+      attrs: {},
+      children: row.cells.map((cell) => {
+        const { align, valign, italic } = resolveCellFormatting(cell);
+        return {
+          tag: 'TD',
+          attrs: {
+            ALIGN: align,
+            VALIGN: valign,
+            ...(cell.rowSpan > 1 ? { ROWSPAN: String(cell.rowSpan) } : {}),
+            ...(cell.colSpan > 1 ? { COLSPAN: String(cell.colSpan) } : {}),
+          },
+          children: buildCellChildren(cell, italic),
+        };
+      }),
     })),
   };
 }
