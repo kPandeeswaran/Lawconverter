@@ -21,7 +21,7 @@ export async function convertOneMif({ mifPath, outputDir, inferredSchema }) {
   const paragraphs = parseParagraphs(tree);
   const textRects = parseTextRects(tree);
   const tables = parseTables(tree);
-  const semanticTree = parseSemanticTree(tree);
+  const semanticTree = parseSemanticTree(tree, tables);
 
   logger.debug('Parsed structure summary', {
     paragraphs: paragraphs.length,
