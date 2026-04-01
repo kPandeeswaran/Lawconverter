@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "convert": "node src/index.js",
-    "convert:debug": "LOG_LEVEL=debug node src/index.js"
+    "convert:debug": "LOG_LEVEL=debug node src/index.js",
+    "ui": "node src/uiServer.js"
   }
 }
