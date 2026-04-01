@@ -1,6 +1,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { convertMifFolder } from './conversionService.js';
+import { analyzeSampleXmlDir } from './analysis/sampleAnalyzer.js';
+import { convertOneMif, ensureDir, listMifFiles } from './io/filePipeline.js';
 import { logger } from './utils/logger.js';
 
 async function main() {
@@ -12,20 +13,29 @@ async function main() {
   const sampleDir = path.join(root, 'sample');
   const outputDir = path.join(root, 'output');
 
-  logger.info('Starting MIF to XML conversion', { mifDir, sampleDir, outputDir });
-  const report = await convertMifFolder({ mifDir, sampleDir, outputDir });
+  await ensureDir(outputDir);
 
-  if (!report.totalFiles) {
-    logger.warn('No MIF files found.', { mifDir });
+  logger.info('Analyzing sample XML files for dynamic mapping rules');
+  const inferredSchema = await analyzeSampleXmlDir(sampleDir);
+  logger.info('Inferred schema', inferredSchema);
+
+  const mifFiles = await listMifFiles(mifDir);
+  if (!mifFiles.length) {
+    logger.warn('No MIF files found.');
     return;
   }
 
-  logger.info('Conversion finished', {
-    totalFiles: report.totalFiles,
-    successCount: report.successCount,
-    failureCount: report.failureCount,
-    logPath: report.logPath,
-  });
+  for (const mifPath of mifFiles) {
+    try {
+      const result = await convertOneMif({ mifPath, outputDir, inferredSchema });
+      logger.info('Converted MIF to XML', result);
+    } catch (error) {
+      logger.error('Conversion failed for file', {
+        mifPath,
+        error: error instanceof Error ? error.message : String(error),
+      });
+    }
+  }
 }
 
 main().catch((error) => {
