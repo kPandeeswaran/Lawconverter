@@ -103,7 +103,20 @@ function mapSemanticNode(semanticTree, tagName, requiredAttrs = []) {
     .filter((child) => typeof child === 'object')
     .map((child) => rawXml(renderSemanticNode(child, 1)));
 
-  return buildXml(tagName, { ...semanticNode.attrs, Appendix: semanticNode.attrs?.Appendix ?? 'N' }, mappedChildren, 0);
+  const normalizedAttrs = { ...semanticNode.attrs };
+  const orderedCaseAttrs =
+    tagName === 'TCase' || tagName === 'Case'
+      ? {
+          ID: normalizedAttrs.ID,
+          Shtitle: normalizedAttrs.Shtitle,
+          Appendix: normalizedAttrs.Appendix ?? 'N',
+          ...Object.fromEntries(
+            Object.entries(normalizedAttrs).filter(([key]) => key !== 'ID' && key !== 'Shtitle' && key !== 'Appendix'),
+          ),
+        }
+      : { ...normalizedAttrs, Appendix: normalizedAttrs.Appendix ?? 'N' };
+
+  return buildXml(tagName, orderedCaseAttrs, mappedChildren, 0);
 }
 
 function mapSemanticNodesByTag(semanticTree, tagName, requiredAttrs = []) {
@@ -132,10 +145,23 @@ function mapSemanticNodesByTag(semanticTree, tagName, requiredAttrs = []) {
       .filter((child) => typeof child === 'object')
       .map((child) => rawXml(renderSemanticNode(child, 1)));
 
+    const normalizedAttrs = { ...semanticNode.attrs };
+    const orderedCaseAttrs =
+      tagName === 'TCase' || tagName === 'Case'
+        ? {
+            ID: normalizedAttrs.ID,
+            Shtitle: normalizedAttrs.Shtitle,
+            Appendix: normalizedAttrs.Appendix ?? 'N',
+            ...Object.fromEntries(
+              Object.entries(normalizedAttrs).filter(([key]) => key !== 'ID' && key !== 'Shtitle' && key !== 'Appendix'),
+            ),
+          }
+        : { ...normalizedAttrs, Appendix: normalizedAttrs.Appendix ?? 'N' };
+
     return {
       id: semanticNode.attrs?.ID,
       tag: tagName,
-      xml: `<?xml version="1.0" encoding="UTF-8"?>\n${buildXml(tagName, { ...semanticNode.attrs, Appendix: semanticNode.attrs?.Appendix ?? 'N' }, mappedChildren, 0)}\n`,
+      xml: `<?xml version="1.0" encoding="UTF-8"?>\n${buildXml(tagName, orderedCaseAttrs, mappedChildren, 0)}\n`,
     };
   });
 }
