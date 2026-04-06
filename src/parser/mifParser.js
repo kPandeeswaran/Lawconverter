@@ -193,12 +193,19 @@ function parseElementBegin(elementBeginNode) {
   const tag = elementBeginNode.children.find((c) => c.name === 'ETag')?.value ?? null;
   const attrsNode = elementBeginNode.children.find((c) => c.name === 'Attributes');
   const attrs = {};
+  const specialCase = elementBeginNode.children.find((c) => c.name === 'SpecialCase')?.value ?? null;
 
   for (const child of attrsNode?.children ?? []) {
     if (child.name !== 'Attribute') continue;
     const name = child.children.find((x) => x.name === 'AttrName')?.value;
     const value = child.children.find((x) => x.name === 'AttrValue')?.value ?? '';
     if (name) attrs[name] = value;
+  }
+
+  if (tag === 'Bench' && specialCase && attrs.Special === undefined) {
+    const normalizedSpecialCase = String(specialCase).trim().toLowerCase();
+    if (normalizedSpecialCase === 'no') attrs.Special = 'n';
+    if (normalizedSpecialCase === 'yes') attrs.Special = 'y';
   }
 
   return { tag, attrs };
@@ -327,15 +334,17 @@ export function parseSemanticTree(tree, tables = []) {
         const current = stack[stack.length - 1];
         if (current) current._inSuffix = true;
       } else if (token.name === 'String') {
+        let consumedAsCasePageRef = false;
         if (pendingCasePageCapture) {
           const parsedPage = Number.parseInt(token.value ?? '', 10);
           if (Number.isFinite(parsedPage)) {
             nextIncrementalPageNo = parsedPage + 1;
             pendingCasePageCapture = false;
+            consumedAsCasePageRef = true;
           }
         }
         const current = stack[stack.length - 1];
-        if (!current?._inSuffix) appendText(current, token.value ?? '');
+        if (!current?._inSuffix && !consumedAsCasePageRef) appendText(current, token.value ?? '');
       } else if (token.name === 'Char') {
         const current = stack[stack.length - 1];
         if (current?._inSuffix) continue;
