@@ -8,6 +8,36 @@ function escapeXml(text) {
 }
 
 const rawXml = (xml) => ({ __rawXml: xml });
+const FORCE_EXPANDED_TAGS = new Set(['Pagenum']);
+
+function normalizeTagAttributes(tag, attrs = {}) {
+  const normalized = { ...attrs };
+
+  if (tag === 'TJudge') {
+    normalized.Position1 = normalized.Position1 && String(normalized.Position1).trim() ? normalized.Position1 : 'None';
+    normalized.Position2 = normalized.Position2 && String(normalized.Position2).trim() ? normalized.Position2 : 'None';
+    return {
+      Position1: normalized.Position1,
+      Position2: normalized.Position2,
+      ...Object.fromEntries(
+        Object.entries(normalized).filter(([key]) => key !== 'Position1' && key !== 'Position2'),
+      ),
+    };
+  }
+
+  if (tag === 'Date') {
+    return {
+      Month: normalized.Month,
+      Date: normalized.Date,
+      Year: normalized.Year,
+      ...Object.fromEntries(
+        Object.entries(normalized).filter(([key]) => key !== 'Month' && key !== 'Date' && key !== 'Year'),
+      ),
+    };
+  }
+
+  return normalized;
+}
 
 function buildXml(tag, attrs = {}, children = [], indent = 0) {
   const pad = '  '.repeat(indent);
@@ -16,7 +46,8 @@ function buildXml(tag, attrs = {}, children = [], indent = 0) {
     ? ` ${attrEntries.map(([k, v]) => `${k}="${escapeXml(String(v))}"`).join(' ')}`
     : '';
 
-  if (!children.length) return `${pad}<${tag}${attrText}/>`;
+  if (!children.length && !FORCE_EXPANDED_TAGS.has(tag)) return `${pad}<${tag}${attrText}/>`;
+  if (!children.length && FORCE_EXPANDED_TAGS.has(tag)) return `${pad}<${tag}${attrText}></${tag}>`;
 
   const body = children
     .map((c) => {
@@ -68,6 +99,7 @@ function cleanBenchText(text) {
 }
 
 function renderSemanticNode(node, indent = 1) {
+  const normalizedAttrs = normalizeTagAttributes(node.tag, node.attrs ?? {});
   const childNodes = [];
   let pendingText = '';
 
@@ -83,7 +115,7 @@ function renderSemanticNode(node, indent = 1) {
   }
   if (pendingText.trim()) childNodes.push(normalizeSpace(pendingText));
 
-  return buildXml(node.tag, node.attrs ?? {}, childNodes, indent);
+  return buildXml(node.tag, normalizedAttrs, childNodes, indent);
 }
 
 function mapSemanticNode(semanticTree, tagName, requiredAttrs = []) {
