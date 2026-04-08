@@ -275,10 +275,33 @@ function buildSemanticTableNode(table) {
   };
 }
 
+function extractFootnoteContentMap(tree) {
+  const footnoteNodes = collectByName(tree, 'FNote');
+  const footnoteContentById = new Map();
+
+  for (const footnoteNode of footnoteNodes) {
+    const footnoteId = footnoteNode.children.find((child) => child.name === 'ID')?.value;
+    if (!footnoteId) continue;
+
+    const paraNodes = footnoteNode.children.filter((child) => child.name === 'Para');
+    if (!paraNodes.length) continue;
+
+    const paragraphs = paraNodes
+      .map((paraNode) => parseParaLines(paraNode).map((line) => line.strings).join(' ').replace(/\s+/g, ' ').trim())
+      .filter(Boolean);
+
+    if (!paragraphs.length) continue;
+    footnoteContentById.set(String(footnoteId), paragraphs);
+  }
+
+  return footnoteContentById;
+}
+
 export function parseSemanticTree(tree, tables = []) {
   const root = { tag: '__root__', attrs: {}, children: [] };
   const stack = [root];
   const paraLines = collectByName(tree, 'ParaLine');
+  const footnoteContentById = extractFootnoteContentMap(tree);
   const tableMapById = new Map(
     tables
       .filter((table) => table.id !== null && table.id !== undefined)
@@ -362,11 +385,20 @@ export function parseSemanticTree(tree, tables = []) {
         }
       } else if (token.name === 'FNote') {
         const raw = token.value ?? '';
-        if (!fnoteMap.has(raw)) {
-          fnoteCounter += 1;
-          fnoteMap.set(raw, String(fnoteCounter));
+        const paragraphs = footnoteContentById.get(String(raw).trim()) ?? [];
+        if (paragraphs.length) {
+          stack[stack.length - 1].children.push({
+            tag: 'Footnote',
+            attrs: {},
+            children: paragraphs.map((text) => ({ tag: 'Para', attrs: {}, children: [text] })),
+          });
+        } else {
+          if (!fnoteMap.has(raw)) {
+            fnoteCounter += 1;
+            fnoteMap.set(raw, String(fnoteCounter));
+          }
+          stack[stack.length - 1].children.push({ tag: 'Footnote', attrs: {}, children: [fnoteMap.get(raw)] });
         }
-        stack[stack.length - 1].children.push({ tag: 'Footnote', attrs: {}, children: [fnoteMap.get(raw)] });
       }
     }
   }
