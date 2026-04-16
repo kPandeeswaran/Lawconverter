@@ -151,12 +151,11 @@ export function parseTables(tree) {
       const pgfNode = paraNode.children.find((x) => x.name === 'Pgf');
       const align = pgfNode?.children.find((x) => x.name === 'PgfAlignment')?.value ?? null;
       const cellAlignment = pgfNode?.children.find((x) => x.name === 'PgfCellAlignment')?.value ?? null;
-      const text = parseParaLines(paraNode)
-        .map((line) => line.strings)
-        .join(' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-      return { style, align, cellAlignment, text };
+      const paraLineTexts = parseParaLines(paraNode)
+        .map((line) => line.strings.replace(/\s+/g, ' ').trim())
+        .filter(Boolean);
+      const text = paraLineTexts.join('\n');
+      return { style, align, cellAlignment, text, paraLineTexts };
     });
   };
 
@@ -179,7 +178,10 @@ export function parseTables(tree) {
               cellIndex: cIdx,
               rowSpan,
               colSpan,
-              text: paragraphs.map((p) => p.text).join(' ').replace(/\s+/g, ' ').trim(),
+              text: paragraphs
+                .flatMap((p) => p.paraLineTexts ?? (p.text ? [p.text] : []))
+                .join('\n')
+                .trim(),
               paragraphs,
             };
           }),
@@ -240,11 +242,14 @@ function buildSemanticTableNode(table) {
   };
 
   const buildCellChildren = (cell, italic) => {
-    const paragraphTexts = (cell.paragraphs ?? []).map((para) => para.text).filter(Boolean);
-    if (!paragraphTexts.length) return [];
+    const cellLines = (cell.paragraphs ?? [])
+      .flatMap((para) => para.paraLineTexts ?? (para.text ? [para.text] : []))
+      .map((text) => text.replace(/\s+/g, ' ').trim())
+      .filter(Boolean);
+    if (!cellLines.length) return [];
 
     const formattedContent = [];
-    paragraphTexts.forEach((text, index) => {
+    cellLines.forEach((text, index) => {
       if (index > 0) formattedContent.push({ tag: 'BR', attrs: {}, children: [] });
       formattedContent.push(italic ? { tag: 'ITALICS', attrs: {}, children: [text] } : text);
     });
