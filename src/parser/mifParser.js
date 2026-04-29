@@ -344,6 +344,14 @@ export function parseSemanticTree(tree, tables = []) {
       } else if (token.name === 'PrefixEnd') {
         const current = stack[stack.length - 1];
         if (current?.children?.length) {
+           const inlineStrings = current.children
+            .filter((child) => typeof child === 'string')
+            .map((child) => child.trim())
+            .filter(Boolean);
+
+          if (current.tag === 'JudgmentGroup' && !current.attrs?.Title && inlineStrings.length) {
+            current.attrs = { ...current.attrs, Title: inlineStrings.join(' ') };
+          }
           current.children = current.children.filter((child) => typeof child !== 'string');
         }
       } else if (token.name === 'XRef') {
