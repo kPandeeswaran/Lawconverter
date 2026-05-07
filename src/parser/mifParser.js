@@ -68,20 +68,21 @@ function collectByName(node, targetName, out = []) {
   return out;
 }
 
-export function extractStrings(paraLineNode) {
+export function extractStrings(paraLineNode, { normalizeSoftHyphen = false } = {}) {
   const strings = [];
   for (const child of paraLineNode.children ?? []) {
     if (child.name === 'String' && child.value !== null) strings.push(child.value);
     if (child.name === 'Char') {
       if (child.value === 'HardReturn') strings.push('\n');
-      if (child.value === 'SoftHyphen') strings.push('-');
+      if (child.value === 'SoftHyphen' && normalizeSoftHyphen) strings.push('-');
       if (child.value === 'DiscHyphen') strings.push('-');
+      if (child.value === 'EnSpace') strings.push(' ');
     }
   }
   return strings.join('');
 }
 
-export function parseParaLines(paraNode) {
+export function parseParaLines(paraNode, options = {}) {
   return (paraNode.children ?? [])
     .filter((child) => child.name === 'ParaLine')
     .map((lineNode, index) => {
@@ -90,7 +91,7 @@ export function parseParaLines(paraNode) {
         index,
         line: lineNode.line,
         textRectId: textRect,
-        strings: extractStrings(lineNode),
+        strings: extractStrings(lineNode, options),
         rawNode: lineNode,
       };
     });
@@ -151,7 +152,7 @@ export function parseTables(tree) {
       const pgfNode = paraNode.children.find((x) => x.name === 'Pgf');
       const align = pgfNode?.children.find((x) => x.name === 'PgfAlignment')?.value ?? null;
       const cellAlignment = pgfNode?.children.find((x) => x.name === 'PgfCellAlignment')?.value ?? null;
-      const paraLineTexts = parseParaLines(paraNode)
+      const paraLineTexts = parseParaLines(paraNode, { normalizeSoftHyphen: true })
         .map((line) => line.strings.replace(/\s+/g, ' ').trim())
         .filter(Boolean);
       const text = paraLineTexts.join('\n');
@@ -386,6 +387,7 @@ export function parseSemanticTree(tree, tables = []) {
         if (current?._inSuffix) continue;
         if (token.value === 'HardReturn') appendText(current, '\n');
         if (token.value === 'DiscHyphen') appendText(current, '-');
+        if (token.value === 'EnSpace') appendText(current, ' ');
       } else if (token.name === 'ATbl') {
         const current = stack[stack.length - 1];
         if (current?._inSuffix) continue;
